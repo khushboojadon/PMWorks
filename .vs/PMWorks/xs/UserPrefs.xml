@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{918AC907-7AF8-468D-BB06-15B7F949ABDC}|Default">
+  <MonoDevelop.Ide.ItemProperties.PMWorks.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PMWorks.iOS/Services/AuthenticationService.cs">
+    <Files>
+      <File FileName="PMWorks.iOS/Services/AuthenticationService.cs" Line="37" Column="52" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PMWorks" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PMWorks.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.983C9A24-53FA-4736-BFFD-3C2D4A9FEEE9" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

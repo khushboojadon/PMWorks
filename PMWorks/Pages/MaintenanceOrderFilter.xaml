@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="PMWorks.Pages.MaintenanceOrderFilter"
+            >
+   <StackLayout Orientation="Vertical">
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Label Margin="10,0,10,0" Text="Date From" HorizontalOptions="Start" VerticalOptions="Center"  />
+            <DatePicker Margin="10,0,10,0" x:Name="dp" MaximumDate="2050/12/31" MinimumDate="2019/05/03"  />
+            <Label Margin="15,10,0,0" Text="Date To" HorizontalOptions="Start" VerticalOptions="Center" />
+            <DatePicker Margin="10,0,10,0" x:Name="dp1" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
+            <Label Margin="15,15,0,10" Text="Categories" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20"  />
+        </StackLayout>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout   Orientation="Horizontal"                 >
+                    <Switch IsToggled="false"
+        HorizontalOptions="Start"
+     
+                Margin="10,0,0,0"
+        
+        VerticalOptions="CenterAndExpand" />
+
+                    <Label Text="rj" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl" />
+                </StackLayout>
+
+                <StackLayout   Orientation="Horizontal"                 >
+                    <Switch IsToggled="false"
+        HorizontalOptions="Start"
+                Margin="10,0,0,0"
+      
+        VerticalOptions="CenterAndExpand" />
+
+                    <Label Text="rps" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl1" />
+                </StackLayout>
+                <StackLayout   Orientation="Horizontal"                 >
+                    <Switch IsToggled="false"
+        HorizontalOptions="Start"
+                Margin="10,0,0,0"
+       
+        VerticalOptions="CenterAndExpand" />
+
+                    <Label Text="rpsj" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl2" />
+                </StackLayout>
+
+                <StackLayout   Orientation="Horizontal"                 >
+                    <Switch IsToggled="false"
+        HorizontalOptions="Start"
+        
+                Margin="10,0,0,0"
+         
+        VerticalOptions="CenterAndExpand" />
+
+                    <Label Text="rpsjha" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl3" />
+                </StackLayout>
+
+                <StackLayout   Orientation="Horizontal"                 >
+                    <Switch IsToggled="false"
+        HorizontalOptions="Start"
+       
+                Margin="10,0,0,0"
+             
+        VerticalOptions="CenterAndExpand" />
+
+                    <Label Text="rjha" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl4" />
+                </StackLayout>
+
+                <StackLayout   Orientation="Horizontal"                 >
+                    <Switch IsToggled="false"
+        HorizontalOptions="Start"
+   
+                Margin="10,0,0,0"
+     
+        VerticalOptions="CenterAndExpand" />
+
+                    <Label Text="rps" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl5" />
+                </StackLayout>
+
+                <StackLayout   Orientation="Horizontal"                 >
+                    <Switch IsToggled="false"
+        HorizontalOptions="Start"
+             
+                Margin="10,0,0,0"
+                
+
+        VerticalOptions="CenterAndExpand" />
+
+                    <Label Text="rjha" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl6" />
+                </StackLayout>
+            </StackLayout>
+            <Button Text=""
+              x:Name="btnClick1"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"                        
+                        HeightRequest="50"
+                        WidthRequest="200"                 
+                              />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

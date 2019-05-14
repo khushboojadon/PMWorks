@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local11="clr-namespace:PMWorks.Pages"
+             x:Class="PMWorks.Pages.HotelDetails"
+             BackgroundColor="#F0F3F4">
+    <ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="MaintenanceListOrder">
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="status" WidthRequest="30"></Image>
+                        <StackLayout Orientation="Vertical" Margin="0,0,0,0">
+                            <Label Text="{Binding MaintenanceOrder}"></Label>
+                            <Label Text="{Binding CreatedOn}"></Label>
+                            <Label Text="{Binding Procedure}"></Label>
+                            <Label Text="{Binding Equipment}"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+            <local11:MaintenanceOrderDataTemplate x:Key="MaintenanceOrderDataTemplate" MaintenanceListOrder="{StaticResource MaintenanceListOrder }"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="hotelName" HorizontalOptions="Center" Style="bold" Font="Medium" Margin="0,5,0,0"/>
+            <ListView Margin="10,15,10,0" ItemTapped="OnItemSelected" x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}"></ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
