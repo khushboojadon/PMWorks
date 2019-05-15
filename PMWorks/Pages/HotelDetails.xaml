@@ -4,8 +4,6 @@
              xmlns:local11="clr-namespace:PMWorks.Pages"
              x:Class="PMWorks.Pages.HotelDetails"
              BackgroundColor="#F0F3F4">
-    <ContentPage.ToolbarItems>
-    </ContentPage.ToolbarItems>
     <ContentPage.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="MaintenanceListOrder">
@@ -26,6 +24,11 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
+            <StackLayout HeightRequest="70" BackgroundColor="#334856" Orientation="Horizontal">
+                <Image Source="logo1" 
+                      Aspect="AspectFit" 
+                       HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0,10,0,10"></Image>
+            </StackLayout>
             <Label x:Name="hotelName" HorizontalOptions="Center" Style="bold" Font="Medium" Margin="0,5,0,0"/>
             <ListView Margin="10,15,10,0" ItemTapped="OnItemSelected" x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}"></ListView>
         </StackLayout>

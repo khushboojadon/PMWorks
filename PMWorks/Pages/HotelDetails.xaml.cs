@@ -12,7 +12,8 @@ namespace PMWorks.Pages
 			InitializeComponent ();
             hotelName.Text = name;
             MaintenanceList.ItemsSource = new MaintenanceOrderList().ListOfMaintenanceOrder();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
         private async void OnItemSelected(object sender, ItemTappedEventArgs e)
         {
             var Orders = e.Item as MaintenanceOrderList;

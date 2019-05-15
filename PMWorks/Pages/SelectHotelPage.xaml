@@ -22,6 +22,11 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
+            <StackLayout HeightRequest="70" BackgroundColor="#334856" Orientation="Horizontal">
+                <Image Source="logo1" 
+                      Aspect="AspectFit" 
+                       HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0,10,0,10"></Image>
+            </StackLayout>
             <Label Margin="0,15,0,0" FontSize="Medium" HorizontalOptions="Center" Text="Please Select A Hotel" TextColor="#000000" Style="bold" />
         <SearchBar x:Name="SearchBar">
         </SearchBar>

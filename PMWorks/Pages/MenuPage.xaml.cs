@@ -10,8 +10,9 @@ namespace PMWorks.Pages
 		public MenuPage (string name)
 		{
 			InitializeComponent ();
-            hotelName.Text = name;            
-		}
+            hotelName.Text = name;
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
         public async void Reports_Clicked(object sender, EventArgs e)
         {
            await Navigation.PushAsync(new HotelDetails(hotelName.Text));

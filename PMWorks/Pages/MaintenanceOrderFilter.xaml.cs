@@ -9,6 +9,7 @@ namespace PMWorks.Pages
 		public MaintenanceOrderFilter ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 	}
 }
