@@ -8,10 +8,11 @@
                   xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
                   ios:Page.UseSafeArea="true"
                   >
-    <MasterDetailPage.Master>
+    
+     <MasterDetailPage.Master>
         <ContentPage Title="Menu" Icon="hamburger_menu.png"
                  BackgroundColor="White">
-            <!--<Frame Padding="20"
+                 <!--<Frame Padding="20"
                         WidthRequest="5"
                         IsClippedToBounds = "true"
                         CornerRadius="0"
@@ -24,17 +25,17 @@
                   SeparatorVisibility="None"
                   ItemTapped="Handle_ItemTapped"
                   BackgroundColor="White">
-
+                    
                     <ListView.Header>
                         <StackLayout Orientation="Vertical"
                                      Spacing="20">
-                            <Button Image="btn_close.png"
+                          <Button Image="btn_close.png"
                                   Margin="20,20,0,0"
                                   HorizontalOptions="Start"
                                   BackgroundColor="Transparent"
                                   
                                   >
-                            </Button>
+                          </Button>
                             <ImageButton Source="usericon"
                                          Margin="40,0,0,0"
                                          HorizontalOptions="StartAndExpand"
@@ -42,7 +43,7 @@
                                          WidthRequest="60"
                                          HeightRequest="60"
                                          >
-                            </ImageButton>
+                           </ImageButton>
                         </StackLayout>
                     </ListView.Header>
                     <ListView.Footer>
@@ -50,7 +51,7 @@
                                  Orientation="Horizontal"  
                                  Padding="40,10,0,10"
                                  Spacing="20">
-                            <Button x:Name="btnLogout"
+                                 <Button x:Name="btnLogout"
                               BackgroundColor="Transparent"
                                Text="LogOut"
                                Clicked="LogOut_Clicked"
@@ -58,30 +59,30 @@
                                FontSize="Medium"
                                VerticalOptions="Center"  
                                >
-
+                                
                             </Button>
-                        </StackLayout>
-
-
+                           </StackLayout>
+                       
+                           
                     </ListView.Footer>
-
+                  
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <customControls:ExtendedViewCell SelectedBackgroundColor="White">
                                 <ViewCell.View>
-
-                                    <StackLayout VerticalOptions="FillAndExpand"  
+                             
+                                 <StackLayout VerticalOptions="FillAndExpand"  
                                  Orientation="Horizontal"  
                                  Padding="40,10,0,10"  
                                  Spacing="20">
-
-                                        <Label Text="{Binding Title}"  
+                                        
+                                     <Label Text="{Binding Title}"  
                                      FontSize="Medium"  
                                      VerticalOptions="Center"  
                                      TextColor="Black"/>
-
-                                    </StackLayout>
-
+                                    
+                                   </StackLayout>
+                                    
                                 </ViewCell.View>
                             </customControls:ExtendedViewCell>
                         </DataTemplate>
@@ -90,11 +91,13 @@
                 </ListView>
 
             </StackLayout>
-            <!-- </Frame>-->
+           <!-- </Frame>-->
         </ContentPage>
     </MasterDetailPage.Master>
+
     <MasterDetailPage.Detail>
         <NavigationPage>
+
         </NavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>

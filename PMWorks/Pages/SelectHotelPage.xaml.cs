@@ -1,4 +1,6 @@
-﻿using PMWorks.Models;
+﻿using System;
+using System.Collections.Generic;
+using PMWorks.Models;
 using Xamarin.Forms;
 
 namespace PMWorks.Pages
@@ -9,14 +11,12 @@ namespace PMWorks.Pages
         {
             InitializeComponent();
             hotelList.ItemsSource = new HotelsList().ListOfHotels();
-         
         }
 
         private async void OnItemSelected(object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as HotelsList;
             await Navigation.PushAsync(new MenuPage(details.HotelName));
-     
         }
     }
 }

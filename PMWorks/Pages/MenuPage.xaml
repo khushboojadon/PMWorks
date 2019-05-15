@@ -5,11 +5,6 @@
              BackgroundColor="#F0F3F4">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout HeightRequest="70" BackgroundColor="#334856" Orientation="Horizontal">
-                <Image Source="logo1" 
-                      Aspect="AspectFit" 
-                       HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0,10,0,10"></Image>
-            </StackLayout>
             <Label x:Name="hotelName" Margin="0,40,0,0" FontSize="Medium" Style="bold" HorizontalOptions="Center"/>
             <Button x:Name="Reports" Margin="10,50,10,0"  Text="Reports"  TextColor="Black" Style="bold" Clicked="Reports_Clicked" FontSize="Medium" BackgroundColor="#ffffff"/>
             <Button Margin="10,50,10,0"  Text=" Maintenance Console"  TextColor="Black" Style="bold" FontSize="Medium" BackgroundColor="#ffffff" />

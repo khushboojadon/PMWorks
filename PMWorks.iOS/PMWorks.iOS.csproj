@@ -180,6 +180,7 @@
     <BundleResource Include="Resources\red.jpg" />
     <BundleResource Include="Resources\room.png" />
     <BundleResource Include="Resources\status.png" />
+    <BundleResource Include="Resources\Filterbtn.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

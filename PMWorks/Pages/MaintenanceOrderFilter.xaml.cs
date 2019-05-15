@@ -1,5 +1,7 @@
-﻿using Xamarin.Forms;
+﻿using PMWorks.Models;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static PMWorks.Models.BrokenList;
 
 namespace PMWorks.Pages
 {
@@ -9,7 +11,13 @@ namespace PMWorks.Pages
 		public MaintenanceOrderFilter ()
 		{
 			InitializeComponent ();
-            NavigationPage.SetHasNavigationBar(this, false);
+            MyList.ItemsSource = new Brokenlist().ListOfItems();
         }
-	}
+
+        void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
+        {
+            bool isToggled = e.Value;
+            //textlbl.Text = isToggled.ToString();
+        }
+    }
 }
