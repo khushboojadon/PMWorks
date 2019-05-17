@@ -11,7 +11,7 @@
             <DataTemplate x:Key="MaintenanceListOrder">
                 <ViewCell>
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="status" WidthRequest="30"></Image>
+                        <Image  Source="status" WidthRequest="30"></Image>
                         <StackLayout Orientation="Vertical" Margin="0,0,0,0">
                             <Label Text="{Binding MaintenanceOrder}"></Label>
                             <Label Text="{Binding CreatedOn}"></Label>

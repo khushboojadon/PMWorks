@@ -7,7 +7,7 @@ namespace PMWorks.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HotelDetails : ContentPage
 	{
-		public HotelDetails (string name)
+        public HotelDetails (string name)
 		{
 			InitializeComponent ();
             hotelName.Text = name;
