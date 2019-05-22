@@ -5,8 +5,7 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
-        
-           <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
     <StackLayout>
         <!-- Place new controls here -->
         <Label Margin="10,0,10,0" Text="Date From" HorizontalOptions="Start" VerticalOptions="Center"  />
@@ -14,37 +13,23 @@
         <Label Margin="15,10,0,0" Text="Date To" HorizontalOptions="Start" VerticalOptions="Center" />
         <DatePicker Margin="10,0,10,0" x:Name="dp1" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
         <Label Margin="15,15,0,10" Text="Categories" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20"  />
-       </StackLayout> 
-     
-        
-        <StackLayout>
-      
-            
-            
-          <ListView x:Name="MyList" >
-                
-                <ListView.ItemTemplate >
-                    <DataTemplate>
-                        <ViewCell>
-                            
-         
-        <StackLayout   Orientation="Horizontal"                 >     
-        <Switch IsToggled="false"
+       </StackLayout>
+            <StackLayout>
+                <ListView x:Name="MyList">
+                    <ListView.ItemTemplate >
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout   Orientation="Horizontal"                 >
+                                    <Switch IsToggled="false"
         HorizontalOptions="Start"
                 OnColor="#D97D54"
                 Margin="10,0,0,0"
         Toggled="Handle_Toggled"
         VerticalOptions="CenterAndExpand" />
-           
-           <Label Text="{Binding ItemName}" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl" />                         
-               </StackLayout>     
-                                
-       
-                            
-            
-                       </ViewCell>
-                    </DataTemplate>
-                    
+                                    <Label Text="{Binding ItemName}" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
                 <Button Text=""
@@ -53,15 +38,8 @@
                 HorizontalOptions="CenterAndExpand"
                         Image="Filterbtn.png"
                         HeightRequest="50"
-                        WidthRequest="200"
-                  
-              
-                 />
-                 
-            
-            
-        
-     </StackLayout>
+                        WidthRequest="200" />
+            </StackLayout>
     </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using PMWorks.Models;
+﻿using PMWorks.Models;
 using Xamarin.Forms;
 
 namespace PMWorks.Pages

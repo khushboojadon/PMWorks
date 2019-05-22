@@ -1,5 +1,4 @@
 ﻿using Xamarin.Forms;
-
 namespace PMWorks.Pages
 {
     public class MaintenanceOrderDataTemplate : DataTemplateSelector

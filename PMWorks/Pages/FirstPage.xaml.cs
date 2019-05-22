@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 using Xamarin.Forms;
 
@@ -33,16 +32,12 @@ namespace PMWorks.Pages
                     var userName = $"{userInfo.GivenName} {userInfo.FamilyName}";
                     await DisplayAlert("Success", userName, "Ok");
                     await Navigation.PushModalAsync(new MainMenu());
-
-
                 }
                 else
                 {
                     // not logged in or token expired take to login screen
                     await Navigation.PushModalAsync(new Login());
                 }
-
-
             }
             catch (Exception ex)
             {
