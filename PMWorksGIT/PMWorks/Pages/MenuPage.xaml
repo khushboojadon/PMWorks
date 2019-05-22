@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMWorks.Pages.MenuPage"
+             BackgroundColor="#F0F3F4">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="hotelName" Margin="0,40,0,0" FontSize="Medium" Style="bold" HorizontalOptions="Center"/>
+            <Button x:Name="Reports" Margin="10,50,10,0"  Text="Reports"  TextColor="Black" Style="bold" Clicked="Reports_Clicked" FontSize="Medium" BackgroundColor="#ffffff"/>
+            <Button Margin="10,50,10,0"  Text=" Maintenance Console"  TextColor="Black" Style="bold" FontSize="Medium" BackgroundColor="#ffffff" />
+            <Button Margin="10,50,10,0"  Text=" Maintenance Management"  TextColor="Black" Style="bold" FontSize="Medium" BackgroundColor="#ffffff"/>
+            <Button Margin="10,50,10,0"  Text=" Progress"  TextColor="Black" Style="bold" FontSize="Medium" BackgroundColor="#ffffff"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

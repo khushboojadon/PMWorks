@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="PMWorks.Pages.MaintenanceOrderFilter"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+            >
+   <StackLayout Orientation="Vertical">
+            <Label Text="Beer Dispenser PM-QTR" x:Name="hotelName" Margin="0,40,0,0" FontSize="Medium" Style="bold" HorizontalOptions="Center" TextColor="Green"/>
+            
+         <StackLayout   Orientation="Horizontal">             
+            <Label Text="Mark All" x:Name="hotelName1" Margin="20,20,0,0" FontSize="Medium" Style="bold" HorizontalOptions="Start" TextColor="Green"/>
+            <Switch IsToggled="false"
+                HorizontalOptions="EndAndExpand"
+                OnColor="#D97D54"
+                Margin="0,15,20,0"
+                Toggled="Handle_Toggled"
+               VerticalOptions="CenterAndExpand" />
+          </StackLayout>  
+          <StackLayout   Orientation="Horizontal">             
+            <Label Text="Broken/Closed"  x:Name="hotelName2" Margin="20,20,0,0" FontSize="Medium" Style="bold" HorizontalOptions="Start" TextColor="Green"/>
+            <Switch IsToggled="false"
+                HorizontalOptions="EndAndExpand"
+                OnColor="#D97D54"
+                Margin="0,15,20,0"
+                Toggled="Handle_Toggled"
+               VerticalOptions="CenterAndExpand" />
+          </StackLayout>     
+          
+          <ListView x:Name="MyList" HeightRequest="50">
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            
+          
+        <StackLayout   Orientation="Horizontal">
+                                
+         <Label Text="{Binding ItemName}" HorizontalOptions="Start" Margin="20,0,0,0" VerticalOptions="Center" x:Name="textlbl" TextColor="Green" />                         
+                                       
+        <Switch IsToggled="false"
+        HorizontalOptions="EndAndExpand"
+                OnColor="#D97D54"
+                Margin="10,0,20,0"
+        Toggled="Handle_Toggled"
+        VerticalOptions="CenterAndExpand" />
+           
+               </StackLayout>
+                                
+       
+                            
+            
+                       </ViewCell>
+                    </DataTemplate>
+                    
+                    </ListView.ItemTemplate>
+                </ListView>
+            
+          <Label Margin="10,20,0,0" Text="Date Completed" HorizontalOptions="Start" VerticalOptions="Center"  />
+          <DatePicker Margin="10,0,10,0" x:Name="dp" MaximumDate="2050/12/31" MinimumDate="2019/05/03"  />  
+          <Label Margin="10,20,0,0" Text="Remarks/Correction" HorizontalOptions="Start" VerticalOptions="Center"  />  
+          <Editor Text="Check" Margin="10,0,10,0" /> 
+          <Label Margin="10,20,0,0" Text="Signature" HorizontalOptions="Start" VerticalOptions="Center"  />  
+          <Editor Text="Check" Margin="10,0,10,0" />
+          <Button Text=""
+              x:Name="btnClick"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Margin="10,20,10,0" 
+                HeightRequest="60"
+               
+              Image="Filterbtn.png"
+                 />
+     </StackLayout>   
+</ContentPage>

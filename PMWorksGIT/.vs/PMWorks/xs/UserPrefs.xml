@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{918AC907-7AF8-468D-BB06-15B7F949ABDC}|Default">
+  <MonoDevelop.Ide.ItemProperties.PMWorks.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PMWorks/Pages/HotelDetails.xaml.cs">
+    <Files>
+      <File FileName="PMWorks/Pages/SelectHotelPage.xaml" Line="17" Column="28" />
+      <File FileName="PMWorks/Pages/HotelDetails.xaml.cs" Line="8" Column="35" />
+      <File FileName="PMWorks/Pages/FirstPage.xaml" Line="5" Column="26" />
+      <File FileName="PMWorks/Pages/SelectHotelPage.xaml.cs" Line="2" Column="21" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PMWorks.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A3EE8717-1028-4AB5-91AD-0C8815DD79FE" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
