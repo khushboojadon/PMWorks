@@ -1,45 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="PMWorks.Pages.FilterScreen"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true">
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Margin="10,0,10,0" Text="Date From" HorizontalOptions="Start" VerticalOptions="Center"  />
-        <DatePicker Margin="10,0,10,0" x:Name="dp" MaximumDate="2050/12/31" MinimumDate="2019/05/03"  />
-        <Label Margin="15,10,0,0" Text="Date To" HorizontalOptions="Start" VerticalOptions="Center" />
-        <DatePicker Margin="10,0,10,0" x:Name="dp1" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
-        <Label Margin="15,15,0,10" Text="Categories" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20"  />
-       </StackLayout>
-            <StackLayout>
-                <ListView x:Name="MyList">
-                    <ListView.ItemTemplate >
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout   Orientation="Horizontal"                 >
-                                    <Switch IsToggled="false"
-        HorizontalOptions="Start"
-                OnColor="#D97D54"
-                Margin="10,0,0,0"
-        Toggled="Handle_Toggled"
-        VerticalOptions="CenterAndExpand" />
-                                    <Label Text="{Binding ItemName}" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl" />
-                                </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <Button Text=""
-              x:Name="btnClick1"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand"
-                        Image="Filterbtn.png"
-                        HeightRequest="50"
-                        WidthRequest="200" />
-            </StackLayout>
-    </StackLayout>
-    </ContentPage.Content>
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="PMWorks.Pages.FilterScreen"
+NavigationPage.HasBackButton="False"
+NavigationPage.HasNavigationBar="false"
+BackgroundColor="#eeeeee"
+xmlns:local11="clr-namespace:PMWorks.Pages"
+xmlns:local="clr-namespace:PMWorks.Controls"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+ios:Page.UseSafeArea="true">
+<StackLayout x:Name="mainparentview">
+<StackLayout Orientation="Horizontal">
+<StackLayout HorizontalOptions="CenterAndExpand"/>
+<Label HorizontalOptions="Center" Text="Filters" TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"/>
+<ImageButton Source="delete"
+Margin="0,0,20,0" 
+HorizontalOptions="EndAndExpand"/>
+</StackLayout>
+<Label Margin="15,0,0,0" Text="Date From:" TextColor="#242126" FontFamily="CircularStd-Bold" HorizontalOptions="Start" VerticalOptions="Center" />
+<DatePicker Margin="10,0,10,0" x:Name="dp" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
+<Label Margin="15,0,0,0" TextColor="#242126" FontFamily="CircularStd-Bold" Text="Date To:" HorizontalOptions="Start" VerticalOptions="Center" />
+<DatePicker Margin="10,0,10,0" x:Name="dp1" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
+<Label Margin="15,0,0,0" TextColor="#242126" FontFamily="CircularStd-Bold" Text="Categories" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" />
+<CollectionView ItemsSource="{Binding .}">
+<CollectionView.ItemsLayout>
+<GridItemsLayout Orientation="Vertical" Span="3"/>
+</CollectionView.ItemsLayout>
+<CollectionView.ItemTemplate>
+<DataTemplate>
+<StackLayout>
+<Grid Margin="1,1">
+<Grid.RowDefinitions>
+<RowDefinition Height="*"/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/> 
+</Grid.ColumnDefinitions>
+<Frame CornerRadius="1" BackgroundColor="#FFFFFF" BorderColor="#c9ffff" HasShadow="true">
+<StackLayout Orientation="Vertical">
+<Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" FontFamily="CircularStd-Bold" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12"/>
+<Image WidthRequest="20" HeightRequest="60" Source="icon_hover" Grid.Row="0" Grid.Column="0"/> 
+</StackLayout>
+</Frame>
+</Grid>
+</StackLayout>
+</DataTemplate>
+</CollectionView.ItemTemplate>
+</CollectionView>
+<Button 
+x:Name="btnClick1"
+Text="Apply Filters"
+CornerRadius="25"
+TextColor="White"
+BackgroundColor="#00D6D8"
+Margin="20,5,20,0"
+Clicked="BtnFilterClicked"/> 
+</StackLayout>
 </ContentPage>
+

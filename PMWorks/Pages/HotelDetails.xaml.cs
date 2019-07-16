@@ -18,5 +18,10 @@ namespace PMWorks.Pages
             var Orders = e.Item as MaintenanceOrderList;
             await Navigation.PushAsync(new MaintenanceOrderFilter());
         }
+
+        private void ButtonFilterClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new FilterScreen());
+        }
     }
 }

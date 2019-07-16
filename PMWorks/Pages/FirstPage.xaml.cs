@@ -31,17 +31,15 @@ namespace PMWorks.Pages
                 {
                     var userName = $"{userInfo.GivenName} {userInfo.FamilyName}";
                     await DisplayAlert("Success", userName, "Ok");
-                    await Navigation.PushModalAsync(new MainMenu());
+                    await Navigation.PushAsync(new MainTabPage());
                 }
-                else
-                {
-                    // not logged in or token expired take to login screen
-                    await Navigation.PushModalAsync(new Login());
-                }
+
             }
             catch (Exception ex)
             {
                 await DisplayAlert("Error", ex.Message, "Ok");
+                // not logged in or token expired take to login screen
+                await Navigation.PushAsync(new Login());
             }
         }
     }

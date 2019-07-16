@@ -25,7 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchArch>x86_64</MtouchArch>
+    <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
@@ -65,7 +65,8 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <OnDemandResourcesInitialInstallTags></OnDemandResourcesInitialInstallTags>
+    <OnDemandResourcesInitialInstallTags>
+    </OnDemandResourcesInitialInstallTags>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -99,6 +100,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Effects\TabbedPageSelectedTabItemDynamicTintColorEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -144,6 +146,106 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tabimg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tabimg.imageset\button_navigation_settings_active.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tabimg.imageset\button_navigation_settings_active%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tabimg.imageset\button_navigation_settings_active%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\hotel.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\hotel.imageset\hotel-icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\hotel.imageset\hotel-icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\hotel.imageset\hotel-icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\report.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\report.imageset\Item-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\report.imageset\Item-1%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\report.imageset\Item-1%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\console.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mgmt.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\progress.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\progress.imageset\Item-3%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\progress.imageset\Item-3%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\progress.imageset\Item-3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo.imageset\logo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo.imageset\logo%402x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo.imageset\logo%403x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\console.imageset\Item.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\console.imageset\Item%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\console.imageset\Item%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mgmt.imageset\Item-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mgmt.imageset\Item-2%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mgmt.imageset\Item-2%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image-2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image-2.imageset\apply-filterbtn-hover.png" />
+    <ImageAsset Include="Assets.xcassets\Image-2.imageset\apply-filterbtn-hover%402x.png" />
+    <ImageAsset Include="Assets.xcassets\Image-2.imageset\apply-filterbtn-hover%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover.png" />
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover%402x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover%403x.png" />
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked.png" />
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%402x.png" />
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%403x.png" />
+    <ImageAsset Include="Assets.xcassets\checked.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update.png" />
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update%402x.png" />
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -152,7 +254,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
       <Version>5.0.5</Version>
     </PackageReference>
@@ -181,8 +283,38 @@
     <BundleResource Include="Resources\room.png" />
     <BundleResource Include="Resources\status.png" />
     <BundleResource Include="Resources\Filterbtn.png" />
+    <BundleResource Include="Resources\btnTick.png" />
+    <BundleResource Include="Resources\filter.png" />
+    <BundleResource Include="Resources\Rubik-Bold.ttf" />
+    <BundleResource Include="Resources\Rubik-Medium.ttf" />
+    <BundleResource Include="Resources\Rubik-Regular.ttf" />
+    <BundleResource Include="Resources\CircularStd-Bold.otf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Assets.xcassets\eliza.imageset\" />
+    <Folder Include="Assets.xcassets\burr.imageset\" />
+    <Folder Include="Assets.xcassets\george.imageset\" />
+    <Folder Include="Assets.xcassets\hamilton.imageset\" />
+    <Folder Include="Assets.xcassets\jefferson.imageset\" />
+    <Folder Include="Assets.xcassets\madison.imageset\" />
+    <Folder Include="Assets.xcassets\phamilton.imageset\" />
+    <Folder Include="Assets.xcassets\reynolds.imageset\" />
+    <Folder Include="Assets.xcassets\schuyler.imageset\" />
+    <Folder Include="Assets.xcassets\washington.imageset\" />
+    <Folder Include="Assets.xcassets\hotelimg.imageset\" />
+    <Folder Include="Assets.xcassets\demoimage.imageset\" />
+    <Folder Include="Assets.xcassets\gridimg.imageset\" />
+    <Folder Include="Assets.xcassets\tabimg.imageset\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Assets.xcassets\hotel.imageset\" />
+    <Folder Include="Assets.xcassets\report.imageset\" />
+    <Folder Include="Assets.xcassets\console.imageset\" />
+    <Folder Include="Assets.xcassets\logo.imageset\" />
+    <Folder Include="Assets.xcassets\mgmt.imageset\" />
+    <Folder Include="Assets.xcassets\progress.imageset\" />
+    <Folder Include="Assets.xcassets\icon_hover.imageset\" />
+    <Folder Include="Assets.xcassets\checked.imageset\" />
+    <Folder Include="Assets.xcassets\updated_status.imageset\" />
   </ItemGroup>
 </Project>

@@ -15,7 +15,7 @@ namespace PMWorks.Models
             {
             new Brokenlist{ItemName="Check condensate pan"},
             new Brokenlist{ItemName="Clean Entire Outside"},
-            new Brokenlist{ItemName="Clean Condenser Coil" }
+            new Brokenlist{ItemName="Clean Condenser Coil" },
 
 
         };

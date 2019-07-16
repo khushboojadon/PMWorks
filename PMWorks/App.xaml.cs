@@ -12,7 +12,6 @@ namespace PMWorks
         {
             InitializeComponent();
             MainPage = new NavigationPage(new FirstPage());
-
         }
 
         protected override void OnStart()

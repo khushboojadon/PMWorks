@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+x:Class="PMWorks.Pages.Signature"
+NavigationPage.HasNavigationBar="false"
+BackgroundColor="#eeeeee"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+ios:Page.UseSafeArea="true">
+<ContentPage.Content>
+<StackLayout Orientation="Vertical">
+<StackLayout Orientation="Horizontal">
+<Label Text="Add Signature :" FontFamily="CircularStd-Bold" FontSize="Large" TextColor="Black" VerticalOptions="Start"
+HorizontalOptions="Start" Margin="20,10,0,0" />
+<Button Margin="10,0,20,0" BackgroundColor="Transparent"
+HorizontalOptions="EndAndExpand" 
+VerticalOptions="Center" FontSize="Medium" 
+Clicked="BackBtnClicked" Text="Cancel" 
+HeightRequest="50" CornerRadius="25" TextColor="Black" ></Button>
+</StackLayout>
+<forms:SignaturePadView BackgroundColor="White" 
+Margin="10,10,10,10" 
+HeightRequest="300"
+WidthRequest="300" 
+StrokeColor="Black"
+HorizontalOptions="CenterAndExpand"
+VerticalOptions="CenterAndExpand"
+StrokeWidth="3" />
+<Button 
+Text="Continue"
+CornerRadius="25"
+TextColor="White"
+Margin="20,0,20,20"
+Clicked="Button_Clicked"
+BackgroundColor="#00D6D8"/>
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

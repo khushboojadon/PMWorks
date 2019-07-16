@@ -1,15 +1,66 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PMWorks.Pages.MenuPage"
-             BackgroundColor="#F0F3F4">
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-            <Label x:Name="hotelName" Margin="0,40,0,0" FontSize="Medium" Style="bold" HorizontalOptions="Center"/>
-            <Button x:Name="Reports" Margin="10,50,10,0"  Text="Reports"  TextColor="Black" Style="bold" Clicked="Reports_Clicked" FontSize="Medium" BackgroundColor="#ffffff"/>
-            <Button Margin="10,50,10,0"  Text=" Maintenance Console"  TextColor="Black" Style="bold" FontSize="Medium" BackgroundColor="#ffffff" />
-            <Button Margin="10,50,10,0"  Text=" Maintenance Management"  TextColor="Black" Style="bold" FontSize="Medium" BackgroundColor="#ffffff"/>
-            <Button Margin="10,50,10,0"  Text=" Progress"  TextColor="Black" Style="bold" FontSize="Medium" BackgroundColor="#ffffff"/>
-        </StackLayout>
-    </ContentPage.Content>
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="PMWorks.Pages.MenuPage"
+BackgroundColor="#eeeeee"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+ios:Page.UseSafeArea="true">
+<NavigationPage.TitleView>
+<StackLayout>
+<Image Source="logo.png" Aspect="AspectFit"
+VerticalOptions="Center"
+HorizontalOptions="Center" />
+</StackLayout>
+</NavigationPage.TitleView>
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" Spacing="30">
+<StackLayout BackgroundColor="#00D6D4">
+<Frame CornerRadius="5" 
+Opacity=".3"
+VerticalOptions="Start"
+HasShadow="True"
+Padding="0" Margin="25,10,25,10">
+<Label x:Name="hotelName" Margin="10,10,10,10" TextColor="Black" FontSize="Medium" HorizontalOptions="Center"/>
+</Frame>
+</StackLayout>
+<Grid RowSpacing="10" ColumnSpacing="10" >
+<Grid.RowDefinitions>
+<RowDefinition Height="*"/>
+<RowDefinition Height="*"/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="*"/>
+</Grid.ColumnDefinitions>
+<ImageButton Source="report.png"
+Grid.Row="0" 
+Grid.Column="0" 
+Clicked="Reports_Clicked" 
+BackgroundColor="Transparent">
+</ImageButton>
+<ImageButton 
+Source="console.png"
+Grid.Row="0" 
+Grid.Column="1" 
+BackgroundColor="Transparent" 
+VerticalOptions="FillAndExpand">
+</ImageButton>
+<ImageButton Source="mgmt.png" 
+Grid.Row="1" 
+Grid.Column="0" 
+BackgroundColor="Transparent" 
+HorizontalOptions="FillAndExpand" 
+VerticalOptions="FillAndExpand">
+</ImageButton>
+<ImageButton Source="progress.png" 
+Grid.Row="1" 
+Grid.Column="1"
+Clicked="Progress_Clicked"
+BackgroundColor="Transparent" 
+HorizontalOptions="FillAndExpand" 
+VerticalOptions="FillAndExpand">
+</ImageButton>
+</Grid>
+</StackLayout>
+</ContentPage.Content>
 </ContentPage>

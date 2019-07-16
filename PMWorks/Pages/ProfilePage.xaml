@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PMWorks.Pages.ProfilePage">
-    <ContentPage.Content>
-        <Label Text=" Profile related info"></Label>
-    </ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="PMWorks.Pages.ProfilePage"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+ios:Page.UseSafeArea="true"
+BackgroundColor="#eeeeee">
+<NavigationPage.TitleView>
+<StackLayout>
+<Image Source="logo.png" Aspect="AspectFit"
+VerticalOptions="Center"
+HorizontalOptions="Center" />
+</StackLayout>
+</NavigationPage.TitleView>
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" >
+<StackLayout BackgroundColor="#00D6D4">
+<Frame CornerRadius="5" 
+Opacity=".3"
+VerticalOptions="Start"
+HasShadow="True"
+Padding="0" Margin="25,10,25,10">
+<Label Text="Profile" Margin="10,10,10,10" TextColor="Black" FontSize="Large" HorizontalOptions="Center"/>
+</Frame>
+</StackLayout>
+<ImageButton Source="usericon"
+Margin="20,10,0,0"
+HorizontalOptions="StartAndExpand"
+BackgroundColor="Transparent"
+WidthRequest="60"
+HeightRequest="60"/>
+<Label Margin="25,10,0,0" FontSize="Large" TextColor="Black" Text="Lalit"/>
+<Frame CornerRadius="5" 
+VerticalOptions="Start"
+HasShadow="True"
+Padding="0" Margin="25,30,25,30">
+<StackLayout Orientation="Vertical">
+<Label Text="MyDetails" Margin="20,10,0,0" FontFamily="Large" TextColor="Gray"/>
+<StackLayout Orientation="Horizontal">
+<Label Text="Email " Margin="20,10,0,0" FontFamily="Large" TextColor="Black"/>
+<Label Text="lalit58@gmail.com " Margin="20,10,0,0" HorizontalOptions="Center" FontFamily="Large" TextColor="Black"/>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label Text="No. of Hotels " Margin="20,10,0,0" FontFamily="Large" TextColor="Black"/>
+<Label Text="10 " Margin="20,10,0,0" HorizontalOptions="Center" FontFamily="Large" TextColor="RoyalBlue"/>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label Text="Role " Margin="20,10,0,0" FontFamily="Large" TextColor="Black"/>
+<Label Text="Director" Margin="20,10,0,0" HorizontalOptions="Center" FontFamily="Large" TextColor="RoyalBlue"/>
+</StackLayout>
+<Button 
+Text="Logout"
+CornerRadius="25"
+TextColor="White"
+Margin="20,30,20,30"
+BackgroundColor="#00D6D8"/>
+</StackLayout>
+</Frame>
+</StackLayout>
+</ContentPage.Content>
 </ContentPage>

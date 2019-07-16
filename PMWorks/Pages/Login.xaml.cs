@@ -30,8 +30,8 @@ namespace PMWorks
                 {
                     var userName = $"{userInfo.GivenName} {userInfo.FamilyName}";
                     await DisplayAlert("Success", userName, "Ok");
-                    await Navigation.PushModalAsync(new MainMenu());
-                    }
+                    await Navigation.PushModalAsync(new MainTabPage());
+                }
 
 
             }

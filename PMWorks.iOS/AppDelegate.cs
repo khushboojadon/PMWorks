@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 using Foundation;
 using UIKit;
 
@@ -24,9 +21,16 @@ namespace PMWorks.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
 
             keywindow = new UIWindow(UIScreen.MainScreen.Bounds);
+
+            //UINavigationBar.Appearance.BarTintColor = UIColor.FromRGBA(50, 71, 85, 1);
+            //UINavigationBar.Appearance.TintColor = UIColor.White;
+            //UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.LightContent;
+
+
 
             LoadApplication(new App());
 

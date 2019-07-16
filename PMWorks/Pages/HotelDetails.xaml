@@ -1,33 +1,83 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local11="clr-namespace:PMWorks.Pages"
-             x:Class="PMWorks.Pages.HotelDetails"
-             BackgroundColor="#F0F3F4">
-    <ContentPage.ToolbarItems>
-    </ContentPage.ToolbarItems>
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <DataTemplate x:Key="MaintenanceListOrder">
-                <ViewCell>
-                    <StackLayout Orientation="Horizontal">
-                        <Image  Source="status" WidthRequest="30"></Image>
-                        <StackLayout Orientation="Vertical" Margin="0,0,0,0">
-                            <Label Text="{Binding MaintenanceOrder}"></Label>
-                            <Label Text="{Binding CreatedOn}"></Label>
-                            <Label Text="{Binding Procedure}"></Label>
-                            <Label Text="{Binding Equipment}"></Label>
-                        </StackLayout>
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-            <local11:MaintenanceOrderDataTemplate x:Key="MaintenanceOrderDataTemplate" MaintenanceListOrder="{StaticResource MaintenanceListOrder }"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-            <Label x:Name="hotelName" HorizontalOptions="Center" Style="bold" Font="Medium" Margin="0,5,0,0"/>
-            <ListView Margin="10,15,10,0" ItemTapped="OnItemSelected" x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}"></ListView>
-        </StackLayout>
-    </ContentPage.Content>
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:local11="clr-namespace:PMWorks.Pages"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+x:Class="PMWorks.Pages.HotelDetails"
+BackgroundColor="#eeeeee"
+ios:Page.UseSafeArea="true">
+<NavigationPage.TitleView>
+<StackLayout>
+<Image Source="logo.png" Aspect="AspectFit"
+VerticalOptions="Center"
+HorizontalOptions="Center" />
+</StackLayout>
+</NavigationPage.TitleView>
+<ContentPage.Resources>
+<ResourceDictionary>
+<DataTemplate x:Key="MaintenanceListOrder">
+<ViewCell>
+<StackLayout BackgroundColor="#eeeeee">
+<StackLayout Orientation="Horizontal">
+<Image Source="hotel" WidthRequest="50"></Image>
+<StackLayout Orientation="Vertical" Margin="10,5,0,5">
+<Label Text="{Binding MaintenanceOrder}" FontSize="Small" TextColor="Black"></Label>
+<Label Text="{Binding CreatedOn}" FontSize="Small" TextColor="Black"></Label>
+<Label Text="{Binding Procedure}" FontSize="Small" TextColor="Black"></Label>
+<Label Text="{Binding Equipment}" FontSize="Small" TextColor="Black"></Label>
+</StackLayout>
+</StackLayout>
+<StackLayout>
+<Grid></Grid>
+</StackLayout>
+<BoxView Margin="25,2,25,0" Opacity="0.7" Color="#727C8E" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="1"/>
+</StackLayout>
+</ViewCell>
+</DataTemplate>
+<local11:MaintenanceOrderDataTemplate x:Key="MaintenanceOrderDataTemplate" MaintenanceListOrder="{StaticResource MaintenanceListOrder }"/>
+</ResourceDictionary>
+</ContentPage.Resources>
+<ContentPage.Content>
+<StackLayout VerticalOptions="FillAndExpand">
+<StackLayout BackgroundColor="#00D6D4">
+<Frame CornerRadius="5" 
+Opacity=".3"
+VerticalOptions="Start"
+HasShadow="True"
+Padding="0" Margin="25,10,25,10">
+<StackLayout Orientation="Vertical">
+<Label Text="Preventive Maintainance List" Margin="10,10,10,0" HorizontalOptions="Center" FontSize="Small" TextColor="#334856"/>
+<StackLayout Orientation="Horizontal">
+<Label Text="Date :" Margin="10,5,10,0" HorizontalOptions="Center" FontSize="Small" TextColor="#334856"/>
+<Label Text="03/04/2019" Margin="0,5,0,0" HorizontalOptions="Center" FontSize="Small" TextColor="#334856"/>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label Text="Name :" Margin="10,5,10,0" HorizontalOptions="Center" FontSize="Small" TextColor="#334856"/>
+<Label x:Name="hotelName" Margin="0,5,0,0" FontSize="Small" TextColor="#334856"/>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label Text="Hotel Account Number :" Margin="10,5,10,0" HorizontalOptions="Center" FontSize="Small" TextColor="#334856"/>
+<Label Text="311j8" Margin="10,5,10,0" FontSize="Small" TextColor="#334856"/>
+</StackLayout>
+<Label Text="Your hotel has orders more than 21 days old" Margin="10,5,10,0" HorizontalOptions="Center" FontSize="Small" TextColor="#334856"/>
+</StackLayout>
+</Frame>
+</StackLayout>
+<Grid VerticalOptions = "FillAndExpand">
+<Grid.RowDefinitions>
+<RowDefinition Height="*" />
+<RowDefinition Height="7*" />
+<RowDefinition Height="*" />
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="3*" />
+<ColumnDefinition Width="2*" />
+<ColumnDefinition Width="3*" />
+</Grid.ColumnDefinitions>
+<ListView Margin="15,0,15,10" BackgroundColor="#F0F3F4" ItemTapped="OnItemSelected" x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}" SeparatorVisibility="None" Grid.Row = "1" Grid.Column = "0" Grid.RowSpan = "2" Grid.ColumnSpan = "3" VerticalOptions = "FillAndExpand" HorizontalOptions="FillAndExpand" SelectionMode="None">
+</ListView>
+<Button Clicked="ButtonFilterClicked" BackgroundColor="Transparent" Image="filter.png" Grid.Row="2" Grid.Column = "2"/>
+</Grid>
+</StackLayout>
+</ContentPage.Content>
 </ContentPage>

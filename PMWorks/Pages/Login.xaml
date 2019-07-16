@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PMWorks.Login">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMWorks.Login"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true">
+      <NavigationPage.TitleView>
+        <OnPlatform x:TypeArguments="View">
+                    <OnPlatform.iOS>
+                 <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <StackLayout Orientation="Horizontal" Spacing="10" Padding="10,10,10,10">
+                    <StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
+                    <Label Text="PMWorks" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"></Label>
+                    <Image WidthRequest="30" Source="logo1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+                    </OnPlatform.iOS>
+                    <OnPlatform.Android>
+                 <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <StackLayout  Orientation="Horizontal" Spacing="10" Padding="10,10,10,10">
+                    <StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
+                    <Label Text="PMWorks" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"></Label>
+                    <Image WidthRequest="30" Source="logo1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+                    </OnPlatform.Android>
+       </OnPlatform>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10" Spacing="10">
-         <Button Text="LogIn" Clicked="LogIn_Clicked"/>
+            <StackLayout Orientation="Vertical" Margin="25,25" VerticalOptions="Center">
+            <Frame HasShadow="true" CornerRadius="10" IsClippedToBounds="false">
+            <Button Text="Log In" Clicked="LogIn_Clicked" TextColor="Black" FontSize="Medium" BackgroundColor="#ffffff"/>
+            </Frame>
   </StackLayout>
     </ContentPage.Content>
 </ContentPage>
