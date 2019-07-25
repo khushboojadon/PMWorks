@@ -3,8 +3,7 @@
 namespace PMWorks.Pages{    public partial class SelectHotelPage : ContentPage    {        public static ObservableCollection<Grouping<string, HotelsList>> HotelsGrouped { get; set; }        public static ObservableCollection<HotelsList> Hotels { get; set; }        public SelectHotelPage()        {            InitializeComponent();            Hotels = new HotelsList().ListOfHotels();
 
 
-            BindingContext = Hotels;            collview.SelectionChanged += Collview_SelectionChanged;        }
-
+            BindingContext = Hotels;            //collview.SelectionChanged += Collview_SelectionChanged;        }
 
         private async void Collview_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

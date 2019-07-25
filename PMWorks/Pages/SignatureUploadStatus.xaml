@@ -5,7 +5,6 @@ x:Class="PMWorks.Pages.SignatureUploadStatus"
 NavigationPage.HasNavigationBar="false"
 xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
 ios:Page.UseSafeArea="true"
-BackgroundColor="#eeeeee"
 NavigationPage.HasBackButton="True">
 <ContentPage.Content>
 <StackLayout VerticalOptions="Center">
@@ -14,17 +13,14 @@ NavigationPage.HasBackButton="True">
 TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"
 Margin="0,20,0,0"
 HorizontalOptions="CenterAndExpand"/>
-<Label Text="Your Status was updated successfully.For more details,check All Orders" TextColor="#242126" FontFamily="CircularStd-Regular" FontSize="16" 
+            <Label Text="Your Status was updated successfully.For more details,check All Orders" TextColor="#242126" FontFamily="CircularStd-Regular" FontSize="16" 
 Margin="20,20,20,20"
 HorizontalOptions="Center"
 VerticalOptions="Center"/>
-<Button 
-Text="Continue"
-CornerRadius="25"
-TextColor="White"
-Margin="20,20,20,50"
-Clicked="Continue_Clicked"
-BackgroundColor="#00D6D8"/>
-</StackLayout>
+    
+<ImageButton BackgroundColor="Transparent" Source="done" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10,5,10,10" Clicked="Continue_Clicked"/>            
+
+
+        </StackLayout>
 </ContentPage.Content>
 </ContentPage>

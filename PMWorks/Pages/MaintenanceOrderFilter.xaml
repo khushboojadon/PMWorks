@@ -1,82 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-x:Class="PMWorks.Pages.MaintenanceOrderFilter"
-xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-ios:Page.UseSafeArea="true"
-BackgroundColor="#eeeeee">
-<NavigationPage.TitleView>
-<StackLayout>
-<Image Source="logo.png" Aspect="AspectFit"
-VerticalOptions="Center"
-HorizontalOptions="Center" />
-</StackLayout>
-</NavigationPage.TitleView>
-<StackLayout x:Name="parentstack" Orientation="Vertical" BackgroundColor="#F0F3F4">
-<StackLayout BackgroundColor="#00D6D4">
-<Frame CornerRadius="5" 
-Opacity=".3"
-VerticalOptions="Start"
-HasShadow="True"
-Padding="0" Margin="25,10,25,10">
-<Label Text="Beer Dispenser PM-QTR" x:Name="hotelName" Margin="30,5,30,5" FontSize="Medium" HorizontalOptions="Center" TextColor="Black" VerticalOptions="FillAndExpand"/>
-</Frame>
-</StackLayout>
-<StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
-<Label Text="Mark All" x:Name="hotelName1" Margin="20,5,0,0" FontSize="Medium" HorizontalOptions="Start" TextColor="Black"/>
-<ImageButton Source="checked"
-WidthRequest="25"
-BackgroundColor="Transparent"
-HeightRequest="25"
-HorizontalOptions="EndAndExpand"
-Margin="0,5,20,0" 
-VerticalOptions="CenterAndExpand" />
-</StackLayout>
-<StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
-<Label Text="Broken/Closed" x:Name="hotelName2" Margin="20,5,0,0" FontSize="Medium" HorizontalOptions="Start" TextColor="Black"/>
-<ImageButton Source="checked"
-BackgroundColor="Transparent"
-WidthRequest="25"
-HeightRequest="25"
-HorizontalOptions="EndAndExpand"
-Margin="0,5,20,0"
-VerticalOptions="CenterAndExpand" />
-</StackLayout>
-<StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
-<ListView x:Name="MyList" SeparatorVisibility="None" BackgroundColor="#F0F3F4" HasUnevenRows="true">
-<ListView.ItemTemplate>
-<DataTemplate>
-<ViewCell>
-<StackLayout>
-<Frame HasShadow="true" CornerRadius="10" IsClippedToBounds="false" BackgroundColor="#FFFFFF" BorderColor="#727C8E" Margin="10,10">
-<StackLayout Orientation="Horizontal" BackgroundColor="#FFFFFF">
-<Label Text="{Binding ItemName}" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl" TextColor="Black" />
-<ImageButton BackgroundColor="Transparent" Source="checked" Margin="0,5,-5,0"
-WidthRequest="25"
-HeightRequest="25"
-HorizontalOptions="EndAndExpand"
-VerticalOptions="CenterAndExpand" />
-</StackLayout>
-</Frame>
-</StackLayout>
-</ViewCell>
-</DataTemplate>
-</ListView.ItemTemplate>
-</ListView>
-<Label Margin="10,5,0,0" Text="Date Completed" HorizontalOptions="Start" VerticalOptions="Center" />
-<DatePicker Margin="10,5,10,0" x:Name="dp" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
-<Label Margin="10,5,0,0" Text="Remarks/Correction" HorizontalOptions="Start" VerticalOptions="Center" />
-<Editor Text="Check" Margin="10,0,10,0" />
-<!--<Label Margin="10,5,0,0" Text="Signature" HorizontalOptions="Start" VerticalOptions="Center" />
-<Editor Text="Check" Margin="10,5,10,0" />-->
-<Button 
-Text="SUBMIT"
-CornerRadius="25"
-x:Name="btnSubmit"
-Clicked="BtnSubmit_Clicked"
-TextColor="White"
-Margin="20,0,20,5"
-BackgroundColor="#00D6D8"/> 
-</StackLayout>
-</StackLayout>
-</ContentPage>
+<?xml version="1.0" encoding="utf-8"?><ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PMWorks.Pages.MaintenanceOrderFilter"xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true"BackgroundColor="#eeeeee">    <NavigationPage.TitleView>        <StackLayout>            <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"VerticalOptions="Center"HorizontalOptions="Center" />        </StackLayout>    </NavigationPage.TitleView>    <StackLayout x:Name="parentstack" Orientation="Vertical" BackgroundColor="#F0F3F4">        <Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">            <!--<StackLayout Orientation="Horizontal" Margin="10,2,10,2">-->            <Label Text="Beer Dispenser PM-QTR" HorizontalTextAlignment="Center" Margin="10,0,10,0" HorizontalOptions="Center" FontSize="18" TextColor="White" FontFamily="Rubik-Bold"/>            <!--</StackLayout>-->        </Frame>        <StackLayout Orientation="Horizontal">            <Label Text="Mark All" FontFamily="CircularStd-Bold" FontSize="20" x:Name="hotelName1" Margin="20,25,0,0" HorizontalOptions="Start" TextColor="Black"/>            <ImageButton Source="checked"WidthRequest="25"BackgroundColor="Transparent"HeightRequest="25"HorizontalOptions="EndAndExpand"Margin="0,25,20,0" VerticalOptions="CenterAndExpand" />        </StackLayout>        <StackLayout Orientation="Horizontal">            <Label Text="Broken/Closed" FontFamily="CircularStd-Bold" FontSize="20" x:Name="hotelName2" Margin="20,5,0,0" HorizontalOptions="Start" TextColor="Black"/>            <ImageButton Source="checked"BackgroundColor="Transparent"WidthRequest="25"HeightRequest="25"HorizontalOptions="EndAndExpand"Margin="0,5,20,0"VerticalOptions="CenterAndExpand" />        </StackLayout>        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">            <ListView x:Name="MyList" SeparatorVisibility="None" BackgroundColor="#F0F3F4" HasUnevenRows="true">                <!--<ListView.Header>                       </ListView.Header>-->                <ListView.ItemTemplate>                    <DataTemplate>                        <ViewCell>                            <StackLayout Orientation="Horizontal" Margin="0,2,0,2" HeightRequest="50" BackgroundColor="#FFFFFF">                                <Label Text="{Binding ItemName}" Margin="20,5,0,0" HorizontalOptions="Start" VerticalOptions="Center" x:Name="textlbl" TextColor="Black" />                                <ImageButton BackgroundColor="Transparent" Source="checked" WidthRequest="25"HeightRequest="25"Margin="0,5,20,0"HorizontalOptions="EndAndExpand"VerticalOptions="CenterAndExpand" />                            </StackLayout>                        </ViewCell>                    </DataTemplate>                </ListView.ItemTemplate>            </ListView>            <ImageButton BackgroundColor="Transparent" Source="submitbtn" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10,5,10,10" Clicked="BtnSubmit_Clicked"/>        </StackLayout>    </StackLayout></ContentPage>

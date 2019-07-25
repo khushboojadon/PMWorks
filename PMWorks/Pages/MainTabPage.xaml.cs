@@ -26,19 +26,19 @@ namespace PMWorks.Pages
         public MainTabPage()
         {
             var selectPage = new NavigationPage(new SelectHotelPage());
-            selectPage.IconImageSource = "tabimg.png";
+            selectPage.IconImageSource = "home.png";
             selectPage.Title = "Home";
 
             Children.Add(selectPage);
 
             var notifyPage = new NavigationPage(new NotificationsPage());
-            notifyPage.IconImageSource = "tabimg.png";
+            notifyPage.IconImageSource = "notification.png";
             notifyPage.Title = "Notifications";
 
             Children.Add(notifyPage);
 
             var profilePage = new NavigationPage(new ProfilePage());
-            profilePage.IconImageSource = "tabimg.png";
+            profilePage.IconImageSource = "profile.png";
             profilePage.Title = "Profile";
 
             Children.Add(profilePage);
@@ -49,9 +49,6 @@ namespace PMWorks.Pages
             // Adding the first child will trigger `OnCurrentPageChanged` immediately, therefore we should take care of bindings beforehand
             InitializeComponent();
         }
-
-
-
         protected override void OnCurrentPageChanged()
         {
             base.OnCurrentPageChanged();
@@ -59,5 +56,4 @@ namespace PMWorks.Pages
         }
 
     }
-
 }

@@ -3,49 +3,76 @@
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 x:Class="PMWorks.Pages.ProgressScreen"
 xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-ios:Page.UseSafeArea="true"
-BackgroundColor="#eeeeee">
+ios:Page.UseSafeArea="true">
 <NavigationPage.TitleView>
+<OnPlatform x:TypeArguments="View">
+<OnPlatform.iOS>
 <StackLayout>
-<Image Source="logo.png" Aspect="AspectFit"
-VerticalOptions="Center"
-HorizontalOptions="Center" />
+<StackLayout VerticalOptions="Start">
+
+<StackLayout Orientation="Horizontal" Spacing="10" Padding="10,10,10,10">
+<StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
+<Label Text="PMWorks" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"></Label>
+<Image WidthRequest="30" Source="logo1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+<StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
 </StackLayout>
+</StackLayout>
+</StackLayout>
+</OnPlatform.iOS>
+<OnPlatform.Android>
+<StackLayout>
+<StackLayout VerticalOptions="Start">
+<StackLayout Orientation="Horizontal" Spacing="10" Padding="10,10,10,10">
+<StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
+<Label Text="PMWorks" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"></Label>
+<Image WidthRequest="30" Source="logo1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+<StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+<StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+</StackLayout>
+</StackLayout>
+</StackLayout>
+</OnPlatform.Android>
+</OnPlatform>
 </NavigationPage.TitleView>
 <ContentPage.Content>
+        
 <StackLayout Orientation="Vertical" Margin="5,50,5,5">
-<Frame HasShadow="true" CornerRadius="10" IsClippedToBounds="false" >
+
+<Frame HasShadow="true" CornerRadius="10" IsClippedToBounds="false" BackgroundColor="#324755">
 <StackLayout Orientation="Vertical">
-<Label x:Name="hotelname" Text="Your Hotels" FontSize="Medium" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,20,0,0" />
-<Label Text="This Week" FontSize="Medium" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,0" />
+<Label x:Name="hotelname" Text="Your Hotels" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,20,0,0" />
+<Label Text="This Week" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,0" /> 
 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" >
-<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"> 
+
 <ImageButton Clicked="YellowOrdersClicked" BackgroundColor="Yellow" Aspect="AspectFit" WidthRequest="60" Margin="0,20,0,0" CornerRadius="30" HeightRequest="60"></ImageButton>
-<Label Text="20" FontSize="Small" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
+<Label Text="20" FontSize="Small" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
 </StackLayout>
-<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"> 
 <ImageButton Clicked="GreenOrdersClicked" BackgroundColor="Green" Aspect="AspectFit" WidthRequest="60" Margin="0,20,0,0" CornerRadius="30" HeightRequest="60"></ImageButton>
-<Label Text="10" FontSize="Small" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
+<Label Text="10" FontSize="Small" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
 </StackLayout>
-<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"> 
 <ImageButton Clicked="RedOrdersClicked" BackgroundColor="Red" Aspect="AspectFit" WidthRequest="60" Margin="0,20,0,0" CornerRadius="30" HeightRequest="60"></ImageButton>
-<Label Text="5" FontSize="Small" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
+<Label Text="5" FontSize="Small" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
 </StackLayout>
-<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"> 
 <ImageButton Clicked="AllOrdersClicked" BackgroundColor="White" Aspect="AspectFit" WidthRequest="60" Margin="0,20,0,0" CornerRadius="30" HeightRequest="60"></ImageButton>
-<Label Text="35" FontSize="Small" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
-</StackLayout>
-</StackLayout>
-</StackLayout>
+<Label Text="35" FontSize="Small" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,10" />
+</StackLayout> 
+</StackLayout> 
+</StackLayout> 
 </Frame>
-<Frame HasShadow="true" CornerRadius="10" IsClippedToBounds="false" Margin="5,40,0,5">
-<StackLayout Orientation="Horizontal" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
+
+<Frame HasShadow="true" BackgroundColor="#324755" CornerRadius="10" IsClippedToBounds="false" Margin="5,40,0,5">
+<StackLayout Orientation="Horizontal" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" > 
 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-<Label Text="Progress :" FontSize="Medium" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,15,0,15" />
-<Label Text="50%" Margin="0,15,0,15" TextColor="Black" FontSize="Medium" VerticalOptions="Center"></Label>
-</StackLayout>
+<Label Text="Progress :" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,15,0,15" />
+<Label Text="50%" Margin="0,15,0,15" TextColor="White" FontSize="Medium" VerticalOptions="Center"></Label>
+</StackLayout> 
 </StackLayout>
 </Frame>
 </StackLayout>
+
 </ContentPage.Content>
 </ContentPage>

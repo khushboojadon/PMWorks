@@ -10,7 +10,8 @@ namespace PMWorks.Pages
         public HotelDetails (string name)
 		{
 			InitializeComponent ();
-            hotelName.Text = name;
+
+            selectedHotelLbl.Text = name;
             MaintenanceList.ItemsSource = new MaintenanceOrderList().ListOfMaintenanceOrder();
 		}
         private async void OnItemSelected(object sender, ItemTappedEventArgs e)
@@ -23,5 +24,7 @@ namespace PMWorks.Pages
         {
             Navigation.PushAsync(new FilterScreen());
         }
+
+
     }
 }

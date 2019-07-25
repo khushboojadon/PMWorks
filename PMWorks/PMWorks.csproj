@@ -17,7 +17,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="Pages\" />
     <Folder Include="Controls\" />
     <Folder Include="Effects\" />
   </ItemGroup>

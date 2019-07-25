@@ -25,10 +25,6 @@ namespace PMWorks.Pages
             bool isToggled = e.Value;
             //textlbl.Text = isToggled.ToString();
         }
-
-        private void BtnFilterClicked(object sender, EventArgs e)
-        {
-            //DisplayAlert("Notification", "Save Changes", "Save", "Cancel");
-        }
+        private async void Close_Clicked(object sender, System.EventArgs e)        {            await Navigation.PopAsync();        }        private async void BtnFilterClicked(object sender, EventArgs e)        {            await Navigation.PopAsync();        }
     }
 }
