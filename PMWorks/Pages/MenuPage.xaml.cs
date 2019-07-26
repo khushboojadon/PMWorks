@@ -18,12 +18,7 @@ namespace PMWorks.Pages
         {
             await Navigation.PushAsync(new HotelDetails(hotelName.Text));
         }
-
-        public async void Handle_Tapped(object sender, System.EventArgs e)
-        {
-            await Navigation.PushAsync(new ConsoleMenuPage());
-        }
-
+        
         public async void Progress_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ProgressScreen(hotelName.Text));

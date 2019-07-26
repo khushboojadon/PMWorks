@@ -5,34 +5,22 @@ x:Class="PMWorks.Pages.ProgressScreen"
 xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
 ios:Page.UseSafeArea="true">
 <NavigationPage.TitleView>
-<OnPlatform x:TypeArguments="View">
-<OnPlatform.iOS>
-<StackLayout>
-<StackLayout VerticalOptions="Start">
-
-<StackLayout Orientation="Horizontal" Spacing="10" Padding="10,10,10,10">
-<StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
-<Label Text="PMWorks" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"></Label>
-<Image WidthRequest="30" Source="logo1.png" VerticalOptions="Center" HorizontalOptions="Center" />
-<StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
-</StackLayout>
-</StackLayout>
-</StackLayout>
-</OnPlatform.iOS>
-<OnPlatform.Android>
-<StackLayout>
-<StackLayout VerticalOptions="Start">
-<StackLayout Orientation="Horizontal" Spacing="10" Padding="10,10,10,10">
-<StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
-<Label Text="PMWorks" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"></Label>
-<Image WidthRequest="30" Source="logo1.png" VerticalOptions="Center" HorizontalOptions="Center" />
-<StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
-<StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
-</StackLayout>
-</StackLayout>
-</StackLayout>
-</OnPlatform.Android>
-</OnPlatform>
+        <OnPlatform x:TypeArguments="View">
+            <OnPlatform.iOS>
+            <StackLayout>
+            <Label Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+            </StackLayout>
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+            <StackLayout>
+            <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+            </StackLayout>   
+            </OnPlatform.Android>
+            </OnPlatform>
 </NavigationPage.TitleView>
 <ContentPage.Content>
         

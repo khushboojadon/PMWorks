@@ -5,25 +5,46 @@ x:Class="PMWorks.Pages.NotificationsPage"
 xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
 ios:Page.UseSafeArea="true"
 BackgroundColor="#eeeeee">
-    <NavigationPage.TitleView>
-        <StackLayout>
-            <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"VerticalOptions="Center"HorizontalOptions="Center" />
-        </StackLayout>
-    </NavigationPage.TitleView>
+<NavigationPage.TitleView>
+        <OnPlatform x:TypeArguments="View">
+            <OnPlatform.iOS>
+            <StackLayout>
+            <Label Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+            </StackLayout>
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+            <StackLayout>
+            <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+            </StackLayout>   
+            </OnPlatform.Android>
+            </OnPlatform>
+</NavigationPage.TitleView>
+   
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" >
-            <StackLayout BackgroundColor="#00D6D4">
-                <Frame CornerRadius="5" 
-Opacity=".3"
-VerticalOptions="Start"
-HasShadow="True"
-Padding="0" Margin="25,10,25,10">
-                    <Label Text="Notification" Margin="10,10,10,10" TextColor="Black" FontSize="Large" HorizontalOptions="Center"/>
-                </Frame>
+            <StackLayout BackgroundColor="#F0F3F4">
+            <Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">
+            
+            <Label Text="Notifications" HorizontalTextAlignment="Center" Margin="10,0,10,0" HorizontalOptions="Center" FontSize="18" TextColor="White" FontFamily="Rubik-Bold"/>
+           
+        </Frame>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Margin="20,0,0,0" HorizontalOptions="StartAndExpand" Text=" Today" TextColor="Black" FontFamily="bold"/>
-                <Label Margin="0,0,20,0" HorizontalOptions="EndAndExpand" Text=" 3" TextColor="RoyalBlue" FontFamily="bold"/>
+                <Label Margin="20,20,0,0" HorizontalOptions="StartAndExpand" Text=" Today" TextColor="Black" FontFamily="Rubik-Bold" FontSize="16"/>
+                <Label Margin="0,20,20,0" HorizontalOptions="EndAndExpand" Text=" 3" TextColor="RoyalBlue" FontFamily="Rubik-Bold" FontSize="16"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="usericon"
+                Margin="20,10,0,0"
+                HorizontalOptions="StartAndExpand"
+                BackgroundColor="Transparent"
+                WidthRequest="60"
+                HeightRequest="60"/>
+                <Label Margin="0,10,20,0" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Text="Last week task pending." TextColor="Black" FontFamily="Rubik-Regular" FontSize="16" HorizontalTextAlignment="Start"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <ImageButton Source="usericon"
@@ -32,7 +53,7 @@ HorizontalOptions="StartAndExpand"
 BackgroundColor="Transparent"
 WidthRequest="60"
 HeightRequest="60"/>
-                <Label Margin="0,10,20,0" HorizontalOptions="CenterAndExpand" Text="Last week task pending." TextColor="Black" FontFamily="bold"/>
+                <Label Margin="0,10,20,0" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Text="Last week task pending." TextColor="Black" FontFamily="Rubik-Regular" FontSize="16" HorizontalTextAlignment="Start"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <ImageButton Source="usericon"
@@ -41,7 +62,11 @@ HorizontalOptions="StartAndExpand"
 BackgroundColor="Transparent"
 WidthRequest="60"
 HeightRequest="60"/>
-                <Label Margin="0,10,20,0" HorizontalOptions="CenterAndExpand" Text="Last week task pending." TextColor="Black" FontFamily="bold"/>
+                <Label Margin="0,10,20,0" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Text="Last week task pending." TextColor="Black" FontFamily="Rubik-Regular" FontSize="16" HorizontalTextAlignment="Start"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Margin="20,0,0,0" HorizontalOptions="StartAndExpand" Text=" This Week" TextColor="Black" FontFamily="Rubik-Bold" FontSize="16" HorizontalTextAlignment="Start"/>
+                <Label Margin="0,0,20,0" HorizontalOptions="EndAndExpand" Text=" 2" TextColor="RoyalBlue" FontFamily="Rubik-Bold" FontSize="16" HorizontalTextAlignment="Start"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <ImageButton Source="usericon"
@@ -50,11 +75,7 @@ HorizontalOptions="StartAndExpand"
 BackgroundColor="Transparent"
 WidthRequest="60"
 HeightRequest="60"/>
-                <Label Margin="0,10,20,0" HorizontalOptions="CenterAndExpand" Text="Last week task pending." TextColor="Black" FontFamily="bold"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label Margin="20,0,0,0" HorizontalOptions="StartAndExpand" Text=" This Week" TextColor="Black" FontFamily="bold"/>
-                <Label Margin="0,0,20,0" HorizontalOptions="EndAndExpand" Text=" 2" TextColor="RoyalBlue" FontFamily="bold"/>
+                <Label Margin="0,10,20,0" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Text="Last week task pending." TextColor="Black" FontFamily="Rubik-Regular" FontSize="16" HorizontalTextAlignment="Start"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <ImageButton Source="usericon"
@@ -63,16 +84,7 @@ HorizontalOptions="StartAndExpand"
 BackgroundColor="Transparent"
 WidthRequest="60"
 HeightRequest="60"/>
-                <Label Margin="0,10,20,0" HorizontalOptions="CenterAndExpand" Text="Last week task pending." TextColor="Black" FontFamily="bold"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <ImageButton Source="usericon"
-Margin="20,10,0,0"
-HorizontalOptions="StartAndExpand"
-BackgroundColor="Transparent"
-WidthRequest="60"
-HeightRequest="60"/>
-                <Label Margin="0,10,20,0" HorizontalOptions="CenterAndExpand" Text="Last week task pending." TextColor="Black" FontFamily="bold"/>
+                <Label Margin="0,10,20,0" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Text="Last week task pending." TextColor="Black" FontFamily="Rubik-Regular" FontSize="16" HorizontalTextAlignment="Start"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
