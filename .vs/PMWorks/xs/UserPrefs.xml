@@ -1,13 +1,22 @@
 ﻿<Properties StartupConfiguration="{918AC907-7AF8-468D-BB06-15B7F949ABDC}|Default">
   <MonoDevelop.Ide.ItemProperties.PMWorks.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PMWorks.iOS/Services/AuthenticationService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PMWorks/Pages/MenuPage.xaml.cs">
     <Files>
-      <File FileName="PMWorks.iOS/Services/AuthenticationService.cs" Line="37" Column="52" />
+      <File FileName="PMWorks.iOS/Services/AuthenticationService.cs" Line="39" Column="10" />
+      <File FileName="PMWorks/Pages/MenuPage.xaml.cs" Line="33" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PMWorks" expanded="True" selected="True" />
+          <Node name="PMWorks" expanded="True">
+            <Node name="PMWorks" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="MenuPage.xaml" expanded="True">
+                  <Node name="MenuPage.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
