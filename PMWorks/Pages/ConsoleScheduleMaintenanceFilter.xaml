@@ -4,21 +4,31 @@ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true"
-x:Class="PMWorks.Pages.ConsoleScheduleMaintenanceFilter"
-             NavigationPage.HasNavigationBar="false">
-<ContentPage.Content>
-<StackLayout Orientation="Vertical">
-<StackLayout Orientation="Horizontal" >
-            <Label HorizontalOptions="Center" Margin="15,10,0,0" Text="Select Room/Equipment" TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"/>
-            <ImageButton Source="delete"
-Margin="0,5,20,0" 
-Clicked="Close_Clicked"
-BackgroundColor="Transparent"
-HorizontalOptions="EndAndExpand"/>
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+ios:Page.UseSafeArea="true"
+x:Class="PMWorks.Pages.ConsoleScheduleMaintenanceFilter">
+    <NavigationPage.TitleView>
+        <OnPlatform x:TypeArguments="View">
+            <OnPlatform.iOS>
+                <StackLayout>
+                    <Label Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
                 </StackLayout>
-<CollectionView Margin="15,20,15,0" ItemsSource="{Binding .}">
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+                <StackLayout>
+                    <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+                </StackLayout>
+            </OnPlatform.Android>
+        </OnPlatform>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label HorizontalOptions="Center" Margin="15,10,0,0" Text="Select Room/Equipment" TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"/>
+            <CollectionView Margin="15,20,15,0" ItemsSource="{Binding .}">
 <CollectionView.ItemsLayout>
 <GridItemsLayout Orientation="Vertical" Span="3"/>
 </CollectionView.ItemsLayout>

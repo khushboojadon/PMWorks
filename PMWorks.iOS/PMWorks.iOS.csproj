@@ -170,28 +170,66 @@
     <ImageAsset Include="Assets.xcassets\logo.imageset\logo%403x-1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover.png" />
-    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover%402x.png" />
-    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover%403x.png" />
-    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\checked.imageset\checked.png" />
-    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%402x.png" />
-    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%403x.png" />
-    <ImageAsset Include="Assets.xcassets\checked.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\updated_status.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update.png" />
-    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update%402x.png" />
-    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update%403x.png" />
-    <ImageAsset Include="Assets.xcassets\btnback.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\all-icon-hover%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\icon_hover.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\updated_status.imageset\status-update%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnback.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\city.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\city.imageset\hotel.png" />
-    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%402x.png" />
-    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%403x.png" />
-    <ImageAsset Include="Assets.xcassets\city.imageset\hotel-1.png" />
-    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%402x-1.png" />
-    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\city.imageset\hotel.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\city.imageset\hotel-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%402x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\city.imageset\hotel%403x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\report_icon.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -204,53 +242,147 @@
     <ImageAsset Include="Assets.xcassets\progress_icon.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\maintenance_console_icon.imageset\maintenance-console-icon.png" />
-    <ImageAsset Include="Assets.xcassets\maintenance_console_icon.imageset\maintenance-console-icon%402x.png" />
-    <ImageAsset Include="Assets.xcassets\maintenance_console_icon.imageset\maintenance-console-icon%403x.png" />
-    <ImageAsset Include="Assets.xcassets\maintenance_management_icon.imageset\maintenance-management-icon.png" />
-    <ImageAsset Include="Assets.xcassets\maintenance_management_icon.imageset\maintenance-management-icon%402x.png" />
-    <ImageAsset Include="Assets.xcassets\maintenance_management_icon.imageset\maintenance-management-icon%403x.png" />
-    <ImageAsset Include="Assets.xcassets\progress_icon.imageset\progress-icon.png" />
-    <ImageAsset Include="Assets.xcassets\progress_icon.imageset\progress-icon%402x.png" />
-    <ImageAsset Include="Assets.xcassets\progress_icon.imageset\progress-icon%403x.png" />
-    <ImageAsset Include="Assets.xcassets\report_icon.imageset\report-icon.png" />
-    <ImageAsset Include="Assets.xcassets\report_icon.imageset\report-icon%402x.png" />
-    <ImageAsset Include="Assets.xcassets\report_icon.imageset\report-icon%403x.png" />
-    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\submit-hover.png" />
-    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\submit-hover%402x.png" />
-    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\submit-hover%403x.png" />
-    <ImageAsset Include="Assets.xcassets\delete.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\delete.imageset\delete.png" />
-    <ImageAsset Include="Assets.xcassets\delete.imageset\delete%402x.png" />
-    <ImageAsset Include="Assets.xcassets\delete.imageset\delete%403x.png" />
-    <ImageAsset Include="Assets.xcassets\btnback.imageset\apply-filterbtn-hover.png" />
-    <ImageAsset Include="Assets.xcassets\btnback.imageset\apply-filterbtn-hover%402x.png" />
-    <ImageAsset Include="Assets.xcassets\btnback.imageset\apply-filterbtn-hover%403x.png" />
-    <ImageAsset Include="Assets.xcassets\done.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\done.imageset\donebtn-hover.png" />
-    <ImageAsset Include="Assets.xcassets\done.imageset\donebtn-hover%402x.png" />
-    <ImageAsset Include="Assets.xcassets\done.imageset\donebtn-hover%403x.png" />
-    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\apply-filterbtn-hover.png" />
-    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\apply-filterbtn-hover%402x.png" />
-    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\apply-filterbtn-hover%403x.png" />
-    <ImageAsset Include="Assets.xcassets\notification.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\notification.imageset\notification.png" />
-    <ImageAsset Include="Assets.xcassets\notification.imageset\notification%402x.png" />
-    <ImageAsset Include="Assets.xcassets\notification.imageset\notification%403x.png" />
-    <ImageAsset Include="Assets.xcassets\home.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\home.imageset\home.png" />
-    <ImageAsset Include="Assets.xcassets\home.imageset\home%402x.png" />
-    <ImageAsset Include="Assets.xcassets\home.imageset\home%403x.png" />
-    <ImageAsset Include="Assets.xcassets\profile.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\profile.imageset\profile.png" />
-    <ImageAsset Include="Assets.xcassets\profile.imageset\profile%402x.png" />
-    <ImageAsset Include="Assets.xcassets\profile.imageset\profile%403x.png" />
-    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\notification-hover.png" />
-    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\notification-hover%402x.png" />
-    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\notification-hover%403x.png" />
+    <ImageAsset Include="Assets.xcassets\maintenance_console_icon.imageset\maintenance-console-icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\maintenance_console_icon.imageset\maintenance-console-icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\maintenance_console_icon.imageset\maintenance-console-icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\maintenance_management_icon.imageset\maintenance-management-icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\maintenance_management_icon.imageset\maintenance-management-icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\maintenance_management_icon.imageset\maintenance-management-icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\progress_icon.imageset\progress-icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\progress_icon.imageset\progress-icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\progress_icon.imageset\progress-icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\report_icon.imageset\report-icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\report_icon.imageset\report-icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\report_icon.imageset\report-icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\submit-hover.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\submit-hover%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\submitbtn.imageset\submit-hover%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\delete.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\delete.imageset\delete.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\delete.imageset\delete%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\delete.imageset\delete%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnback.imageset\apply-filterbtn-hover.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnback.imageset\apply-filterbtn-hover%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnback.imageset\apply-filterbtn-hover%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\done.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\done.imageset\donebtn-hover.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\done.imageset\donebtn-hover%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\done.imageset\donebtn-hover%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\apply-filterbtn-hover.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\apply-filterbtn-hover%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\applyfilter.imageset\apply-filterbtn-hover%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification.imageset\notification.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification.imageset\notification%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification.imageset\notification%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\home.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\home.imageset\home.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\home.imageset\home%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\home.imageset\home%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile.imageset\profile.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile.imageset\profile%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile.imageset\profile%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\notification-hover.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\notification-hover%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\notification_hover.imageset\notification-hover%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
