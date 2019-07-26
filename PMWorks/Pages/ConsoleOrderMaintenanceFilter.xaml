@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="PMWorks.Pages.ConsoleMaintenanceOrder"
+NavigationPage.HasBackButton="False"
+NavigationPage.HasNavigationBar="false"
+xmlns:local11="clr-namespace:PMWorks.Pages"
+xmlns:local="clr-namespace:PMWorks.Controls"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+ios:Page.UseSafeArea="true">
+<StackLayout>
+<StackLayout Orientation="Horizontal" >
+<Label HorizontalOptions="Center" Margin="15,0,0,0" Text="Filters" TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"/>
+<ImageButton Source="delete"
+Margin="0,5,20,0" 
+Clicked="Close_Clicked"
+BackgroundColor="Transparent"
+HorizontalOptions="EndAndExpand"/>
+</StackLayout>
+<Label Margin="10,0,10,0" Text="Order No." />
+<Entry Margin="10,0,10,0" WidthRequest="100" TextColor="#242126" FontFamily="CircularStd-Bold" HorizontalOptions="FillAndExpand" FontSize="20" />
+<Label Margin="15,0,0,0" Text="Date From:" TextColor="#242126" FontFamily="CircularStd-Bold" HorizontalOptions="Start" VerticalOptions="Center" />
+<DatePicker Margin="10,0,10,0" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
+<Label Margin="15,0,0,0" TextColor="#242126" FontFamily="CircularStd-Bold" Text="Date To:" HorizontalOptions="Start" VerticalOptions="Center" />
+<DatePicker Margin="10,0,10,0" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
+<Label Margin="15,0,0,0" TextColor="#242126" FontFamily="CircularStd-Bold" Text="Select Room/Equipment :" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" />
+<CollectionView ItemsSource="{Binding .}">
+<CollectionView.ItemsLayout>
+<GridItemsLayout Orientation="Vertical" Span="3"/>
+</CollectionView.ItemsLayout>
+<CollectionView.ItemTemplate>
+<DataTemplate>
+<StackLayout>
+<Grid Margin="1,1">
+<Grid.RowDefinitions>
+<RowDefinition Height="*"/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+</Grid.ColumnDefinitions>
+<Frame CornerRadius="1" BackgroundColor="#FFFFFF" BorderColor="#c9ffff" HasShadow="true">
+<StackLayout Orientation="Vertical">
+<Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" FontFamily="CircularStd-Bold" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12"/>
+<Image WidthRequest="20" HeightRequest="60" Source="icon_hover" Grid.Row="0" Grid.Column="0"/>
+</StackLayout>
+</Frame>
+</Grid>
+</StackLayout>
+</DataTemplate>
+</CollectionView.ItemTemplate>
+</CollectionView>
+<ImageButton BackgroundColor="Transparent" Source="applyfilter" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10,5,10,10" Clicked="BtnFilterClicked"/>
+</StackLayout>
+</ContentPage>

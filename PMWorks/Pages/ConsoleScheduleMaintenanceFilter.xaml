@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+mc:Ignorable="d"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+x:Class="PMWorks.Pages.ConsoleScheduleMaintenanceFilter"
+             NavigationPage.HasNavigationBar="false">
+<ContentPage.Content>
+<StackLayout Orientation="Vertical">
+<StackLayout Orientation="Horizontal" >
+            <Label HorizontalOptions="Center" Margin="15,10,0,0" Text="Select Room/Equipment" TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"/>
+            <ImageButton Source="delete"
+Margin="0,5,20,0" 
+Clicked="Close_Clicked"
+BackgroundColor="Transparent"
+HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+<CollectionView Margin="15,20,15,0" ItemsSource="{Binding .}">
+<CollectionView.ItemsLayout>
+<GridItemsLayout Orientation="Vertical" Span="3"/>
+</CollectionView.ItemsLayout>
+<CollectionView.ItemTemplate>
+<DataTemplate>
+<StackLayout>
+<Grid Margin="1,1">
+<Grid.RowDefinitions>
+<RowDefinition Height="*"/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+</Grid.ColumnDefinitions>
+<Frame CornerRadius="1" BackgroundColor="#FFFFFF" BorderColor="#c9ffff" HasShadow="true">
+<StackLayout Orientation="Vertical">
+<Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" FontFamily="CircularStd-Bold" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12"/>
+<Image WidthRequest="20" HeightRequest="60" Source="icon_hover" Grid.Row="0" Grid.Column="0"/>
+</StackLayout>
+</Frame>
+</Grid>
+</StackLayout>
+</DataTemplate>
+</CollectionView.ItemTemplate>
+</CollectionView>
+<ImageButton BackgroundColor="Transparent" Source="applyfilter" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10,5,10,10" Clicked="BtnFilterClicked"/>
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>
