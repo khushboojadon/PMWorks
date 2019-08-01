@@ -5,12 +5,8 @@
              BackgroundColor="#eeeeee"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true">
-<<<<<<< HEAD
     
 <NavigationPage.TitleView>
-=======
-    <NavigationPage.TitleView>
->>>>>>> d70e37acafdcf6dac334d4af30c12dedb73ffe8f
         <StackLayout >
             <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" TextColor="White"
 VerticalOptions="Center" HorizontalOptions="Center">
@@ -35,9 +31,10 @@ VerticalOptions="Center" HorizontalOptions="Center">
             </Label.FontFamily>
         </Label>       
             </StackLayout>
+            
             <Grid Margin="10,0,10,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />                 
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -47,10 +44,10 @@ VerticalOptions="Center" HorizontalOptions="Center">
                         <TapGestureRecognizer
                         Tapped="Tapped_Order"/>
                     </Frame.GestureRecognizers>
-
+                   
                     <StackLayout Orientation="Vertical">
                         <Image Source="report_icon" />
-                        <Label HorizontalTextAlignment="Center" Text="Console" FontSize="14" TextColor="Black" MaxLines="1">
+                        <Label HorizontalTextAlignment="Center" Text="Order" FontSize="14" TextColor="Black" MaxLines="1">
                         <Label.FontFamily>
             <OnPlatform x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Rubik-Medium" />
@@ -65,7 +62,7 @@ VerticalOptions="Center" HorizontalOptions="Center">
                         <TapGestureRecognizer
                         Tapped="Tapped_Schedule"/>
                     </Frame.GestureRecognizers>
-                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Vertical">
                         <Image Source="maintenance_console_icon" />
                         <Label HorizontalTextAlignment="Center" Text="Schedule" FontSize="14" TextColor="Black" MaxLines="1">
                         <Label.FontFamily>
@@ -77,13 +74,8 @@ VerticalOptions="Center" HorizontalOptions="Center">
             </Label>     
                     </StackLayout>
                 </Frame>
-<<<<<<< HEAD
               </Grid>
               </StackLayout>
      
-=======
-            </Grid>
-        </StackLayout>
->>>>>>> d70e37acafdcf6dac334d4af30c12dedb73ffe8f
     </ContentPage.Content>
 </ContentPage>
