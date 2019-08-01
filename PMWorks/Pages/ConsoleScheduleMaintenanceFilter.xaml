@@ -53,17 +53,17 @@ x:Class="PMWorks.Pages.ConsoleScheduleMaintenanceFilter">
 <CollectionView.ItemsLayout>
 <GridItemsLayout Orientation="Vertical" Span="3"/>
 </CollectionView.ItemsLayout>
-<CollectionView.ItemTemplate>
-<DataTemplate>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
 <StackLayout>
 <Grid Margin="1,1">
 <Grid.RowDefinitions>
 <RowDefinition Height="*"/>
 </Grid.RowDefinitions>
-<Grid.ColumnDefinitions>
-<ColumnDefinition Width="*"/>
-</Grid.ColumnDefinitions>
-<Frame CornerRadius="1" BackgroundColor="#FFFFFF" BorderColor="#c9ffff" HasShadow="true">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Frame CornerRadius="1" BackgroundColor="#FFFFFF" BorderColor="#c9ffff" HasShadow="true">
 <StackLayout Orientation="Vertical">
 <Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12">
 <Label.FontFamily>
@@ -82,6 +82,6 @@ x:Class="PMWorks.Pages.ConsoleScheduleMaintenanceFilter">
 </CollectionView.ItemTemplate>
 </CollectionView>
 <ImageButton BackgroundColor="Transparent" Source="applyfilter" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10,5,10,10" Clicked="BtnFilterClicked"/>
-</StackLayout>
+</StackLayout> 
 </ContentPage.Content>
 </ContentPage>
