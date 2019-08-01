@@ -11,23 +11,44 @@ x:Class="PMWorks.Pages.ConsoleScheduleMaintenanceFilter">
         <OnPlatform x:TypeArguments="View">
             <OnPlatform.iOS>
                 <StackLayout>
-                    <Label Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+                    <Label Text="PMWorks" FontSize="24" TextColor="White"
             VerticalOptions="Center"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center">
+                    <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>       
                 </StackLayout>
             </OnPlatform.iOS>
             <OnPlatform.Android>
                 <StackLayout>
-                    <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+                    <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" TextColor="White"
             VerticalOptions="Center"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center">
+                    <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>       
                 </StackLayout>
             </OnPlatform.Android>
         </OnPlatform>
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Label HorizontalOptions="Center" Margin="15,10,0,0" Text="Select Room/Equipment" TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"/>
+            <Label HorizontalOptions="Center" Margin="15,10,0,0" Text="Select Room/Equipment" TextColor="#242126" FontSize="24">
+            <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>       
             <CollectionView Margin="15,20,15,0" ItemsSource="{Binding .}">
 <CollectionView.ItemsLayout>
 <GridItemsLayout Orientation="Vertical" Span="3"/>
@@ -44,7 +65,14 @@ x:Class="PMWorks.Pages.ConsoleScheduleMaintenanceFilter">
 </Grid.ColumnDefinitions>
 <Frame CornerRadius="1" BackgroundColor="#FFFFFF" BorderColor="#c9ffff" HasShadow="true">
 <StackLayout Orientation="Vertical">
-<Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" FontFamily="CircularStd-Bold" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12"/>
+<Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12">
+<Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>                                               
 <Image WidthRequest="20" HeightRequest="60" Source="icon_hover" Grid.Row="0" Grid.Column="0"/>
 </StackLayout>
 </Frame>

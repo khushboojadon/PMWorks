@@ -13,7 +13,6 @@ namespace PMWorks.Pages
             hotelName.Text = name;
         }
 
-
         public async void Reports_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new HotelDetails(hotelName.Text));

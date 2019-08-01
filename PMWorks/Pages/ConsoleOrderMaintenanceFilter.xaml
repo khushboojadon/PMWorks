@@ -10,30 +10,79 @@ ios:Page.UseSafeArea="true">
         <OnPlatform x:TypeArguments="View">
             <OnPlatform.iOS>
                 <StackLayout>
-                    <Label Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+                    <Label Text="PMWorks" FontSize="24" TextColor="White"
             VerticalOptions="Center"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center">
+            <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>               
                 </StackLayout>
             </OnPlatform.iOS>
             <OnPlatform.Android>
                 <StackLayout>
-                    <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+                    <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" TextColor="White"
             VerticalOptions="Center"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center">
+                     <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>      
                 </StackLayout>
             </OnPlatform.Android>
         </OnPlatform>
     </NavigationPage.TitleView>
     <ContentPage.Content>
     <StackLayout Orientation="Vertical" >
-        <Label HorizontalOptions="Center" VerticalOptions="Center" Margin="15,0,0,0" Text="Filters" TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"/>
+        <Label HorizontalOptions="Center" VerticalOptions="Center" Margin="15,0,0,0" Text="Filters" TextColor="#242126" FontSize="24">
+        <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>           
         <Label Margin="10,0,10,0" Text="Order No." />
-<Entry Margin="10,0,10,0" WidthRequest="100" TextColor="#242126" FontFamily="CircularStd-Bold" HorizontalOptions="FillAndExpand" FontSize="20" />
-<Label Margin="15,0,0,0" Text="Date From:" TextColor="#242126" FontFamily="CircularStd-Bold" HorizontalOptions="Start" VerticalOptions="Center" />
+<Entry Margin="10,0,10,0" WidthRequest="100" TextColor="#242126" HorizontalOptions="FillAndExpand" FontSize="20">
+        <Entry.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Entry.FontFamily>
+        </Entry>           
+<Label Margin="15,0,0,0" Text="Date From:" TextColor="#242126" HorizontalOptions="Start" VerticalOptions="Center">
+<Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>                   
 <DatePicker Margin="10,0,10,0" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
-<Label Margin="15,0,0,0" TextColor="#242126" FontFamily="CircularStd-Bold" Text="Date To:" HorizontalOptions="Start" VerticalOptions="Center" />
+<Label Margin="15,0,0,0" TextColor="#242126" Text="Date To:" HorizontalOptions="Start" VerticalOptions="Center">
+<Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>                   
 <DatePicker Margin="10,0,10,0" MaximumDate="2050/12/31" MinimumDate="2019/05/03" />
-<Label Margin="15,0,0,0" TextColor="#242126" FontFamily="CircularStd-Bold" Text="Select Room/Equipment :" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20" />
+<Label Margin="15,0,0,0" TextColor="#242126" Text="Select Room/Equipment :" HorizontalOptions="Start" VerticalOptions="Center" FontSize="20">
+<Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>                   
 <CollectionView ItemsSource="{Binding .}">
 <CollectionView.ItemsLayout>
 <GridItemsLayout Orientation="Vertical" Span="3"/>
@@ -50,7 +99,14 @@ ios:Page.UseSafeArea="true">
 </Grid.ColumnDefinitions>
 <Frame CornerRadius="1" BackgroundColor="#FFFFFF" BorderColor="#c9ffff" HasShadow="true">
 <StackLayout Orientation="Vertical">
-<Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" FontFamily="CircularStd-Bold" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12"/>
+<Label HeightRequest="30" HorizontalTextAlignment="Center" Text="{Binding ItemName}" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="12">
+<Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>                                               
 <Image WidthRequest="20" HeightRequest="60" Source="icon_hover" Grid.Row="0" Grid.Column="0"/>
 </StackLayout>
 </Frame>

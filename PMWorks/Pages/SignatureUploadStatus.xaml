@@ -10,13 +10,27 @@ NavigationPage.HasBackButton="True">
 <StackLayout VerticalOptions="Center">
 <ImageButton Source="updated_status" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center" />
 <Label Text="Status Updated"
-TextColor="#242126" FontFamily="CircularStd-Bold" FontSize="24"
+TextColor="#242126" FontSize="24"
 Margin="0,20,0,0"
-HorizontalOptions="CenterAndExpand"/>
-            <Label Text="Your Status was updated successfully.For more details,check All Orders" TextColor="#242126" FontFamily="CircularStd-Regular" FontSize="16" 
+HorizontalOptions="CenterAndExpand">
+<Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>                 
+            <Label Text="Your Status was updated successfully.For more details,check All Orders" TextColor="#242126" FontSize="16" 
 Margin="20,20,20,20"
 HorizontalOptions="Center"
-VerticalOptions="Center"/>
+VerticalOptions="Center">
+<Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+                <On Platform="iOS" Value="CircularStd-Bold" />
+                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+            </OnPlatform>
+            </Label.FontFamily>
+        </Label>                 
     
 <ImageButton BackgroundColor="Transparent" Source="done" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10,5,10,10" Clicked="Continue_Clicked"/>            
 

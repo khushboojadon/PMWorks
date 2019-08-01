@@ -25,7 +25,6 @@ namespace PMWorks
                     AuthenticationParameters.ReturnUri);
 
                 var userInfo = authenticationResult.UserInfo;
-
                 if  (userInfo != null)
                 {
                     var userName = $"{userInfo.GivenName} {userInfo.FamilyName}";
