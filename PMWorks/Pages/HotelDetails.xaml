@@ -13,7 +13,7 @@ ios:Page.UseSafeArea="true">
             <StackLayout>
             <Label Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
             VerticalOptions="Center"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"/>
             </StackLayout>
             </OnPlatform.iOS>
             <OnPlatform.Android>
@@ -50,26 +50,20 @@ ios:Page.UseSafeArea="true">
 </ResourceDictionary>
 </ContentPage.Resources>
 <ContentPage.Content>
-<StackLayout VerticalOptions="FillAndExpand" Spacing="20" >
-
-<Grid VerticalOptions = "FillAndExpand">
-
-<Grid.RowDefinitions>
-<RowDefinition Height="7*" />
-<RowDefinition Height="*" />
-</Grid.RowDefinitions>
-
-<Grid.ColumnDefinitions>
-<ColumnDefinition Width="*" />
-<ColumnDefinition Width="*" />
-<ColumnDefinition Width="*" />
-</Grid.ColumnDefinitions>
-
-
-<ListView ItemTapped="OnItemSelected" x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}" SeparatorVisibility="None" Grid.Row="0" Grid.Column="0" Grid.RowSpan = "2" Grid.ColumnSpan = "3" VerticalOptions = "FillAndExpand" HorizontalOptions="FillAndExpand" SelectionMode="None">
-<ListView.Header>
-
-<Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">
+        <StackLayout VerticalOptions="FillAndExpand" Spacing="20" >
+            <Grid VerticalOptions = "FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ListView ItemTapped="OnItemSelected" x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}" SeparatorVisibility="None" Grid.Row="0" Grid.Column="0" Grid.RowSpan = "2" Grid.ColumnSpan = "3" VerticalOptions = "FillAndExpand" HorizontalOptions="FillAndExpand" SelectionMode="None">
+                    <ListView.Header>
+                        <Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">
 <StackLayout Orientation="Vertical">
 
 <Label Text="Preventive Maintainance List" HorizontalTextAlignment="Center" MaxLines="1" HorizontalOptions="Center" FontSize="18" TextColor="White" FontFamily="Rubik-Bold"/>
@@ -89,12 +83,11 @@ ios:Page.UseSafeArea="true">
 <Label Text="311j8" Margin="0,5,0,0" FontSize="14" HorizontalTextAlignment="Center" TextColor="White" FontFamily="Rubik-Medium"/>
 </StackLayout>
 <Label Text="Your hotel has orders more than 21 days old" MaxLines="1" HorizontalTextAlignment="Center" Margin="10,5,10,0" HorizontalOptions="Center" FontSize="16" TextColor="White" FontFamily="Rubik-Medium"/>
-
 </StackLayout>
 </Frame>
 </ListView.Header>
 </ListView>
-                <Button Clicked="ButtonFilterClicked" BackgroundColor="Transparent"  Image="notification_hover.png" Grid.Row="1" Grid.Column = "2"/>
+<Button Clicked="ButtonFilterClicked" BackgroundColor="Transparent"  Image="notification_hover.png" Grid.Row="1" Grid.Column = "2"/>
 <!--</Frame> -->
 </Grid>
 </StackLayout>

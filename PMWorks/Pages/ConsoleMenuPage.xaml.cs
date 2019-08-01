@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace PMWorks.Pages
@@ -11,17 +10,14 @@ namespace PMWorks.Pages
         {
             InitializeComponent();
         }
-
-
-
-public async void Handle_Tapped(object sender, System.EventArgs e)
+public async void Tapped_Order(object sender, System.EventArgs e)
         {
-           await Navigation.PushAsync(new ConsoleMaintenanceOrder());
+           await Navigation.PushAsync(new ConsoleOrderMaintenance());
         }
 
-public async void Handles_Tapped(object sender, System.EventArgs e)
+public async void Tapped_Schedule(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ConsoleScheduleMaintenanceFilter());
+            await Navigation.PushAsync(new ConsoleScheduleMaintenance());
         }
     }
 }
