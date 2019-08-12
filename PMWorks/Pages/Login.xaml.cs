@@ -27,7 +27,7 @@ namespace PMWorks
                 var userInfo = authenticationResult.UserInfo;
                 if  (userInfo != null)
                 {
-                    var userName = $"{userInfo.GivenName} {userInfo.FamilyName}";
+                    var userName = $"{userInfo.DisplayableId}";
                     await DisplayAlert("Success", userName, "Ok");
                     await Navigation.PushModalAsync(new MainTabPage());
                 }

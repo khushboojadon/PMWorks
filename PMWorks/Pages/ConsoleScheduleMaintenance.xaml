@@ -1,79 +1,121 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             xmlns:local11="clr-namespace:PMWorks.Pages"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             x:Class="PMWorks.Pages.ConsoleScheduleMaintenance"
-             ios:Page.UseSafeArea="true">
-    <NavigationPage.TitleView>
-        <OnPlatform x:TypeArguments="View">
-            <OnPlatform.iOS>
-                <StackLayout>
-                    <Label Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
-                </StackLayout>
-            </OnPlatform.iOS>
-            <OnPlatform.Android>
-                <StackLayout>
-                    <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-                </StackLayout>
-            </OnPlatform.Android>
-        </OnPlatform>
-    </NavigationPage.TitleView>
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <DataTemplate x:Key="MaintenanceListOrder">
-                <ViewCell>
-                    <StackLayout >
-                        <StackLayout Orientation="Horizontal">
-                            <Image Source="city" WidthRequest="50" Margin="10,10"></Image>
-                            <StackLayout Orientation="Vertical" Margin="10,10">
-                                <Label Text="{Binding MaintenanceOrder}" FontFamily="Rubik-Regular" FontSize="14" TextColor="Black"></Label>
-                                <Label Text="{Binding CreatedOn}" FontFamily="Rubik-Regular" FontSize="14" TextColor="Black"></Label>
-                                <Label Text="{Binding Procedure}" FontFamily="Rubik-Regular" FontSize="14" TextColor="Black"></Label>
-                                <Label Text="{Binding Equipment}" FontFamily="Rubik-Regular" FontSize="14" TextColor="Black"></Label>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout>
-                            <Grid></Grid>
-                        </StackLayout>
-                        <BoxView Color="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="1"/>
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-            <local11:MaintenanceOrderDataTemplate x:Key="MaintenanceOrderDataTemplate" MaintenanceListOrder="{StaticResource MaintenanceListOrder }"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand" Spacing="20" >
-            <Grid VerticalOptions = "FillAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="7*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <ListView  x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}" SeparatorVisibility="None" Grid.Row="0" Grid.Column="0" Grid.RowSpan = "2" Grid.ColumnSpan = "3" VerticalOptions = "FillAndExpand" HorizontalOptions="FillAndExpand" SelectionMode="None">
-                    <ListView.Header>
-                        <Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">
-                            <StackLayout Orientation="Vertical">
-                                <Label Text="Maintenance Schedule List" HorizontalTextAlignment="Center" MaxLines="1" HorizontalOptions="Center" FontSize="18" TextColor="White" FontFamily="Rubik-Bold"/>
-                            </StackLayout>
-                        </Frame>
-                    </ListView.Header>
-                </ListView>
-                <Button Clicked="ButtonFilterClicked" BackgroundColor="Transparent"  Image="notification_hover.png" Grid.Row="1" Grid.Column = "2"/>
-                <!--</Frame> -->
-            </Grid>
-        </StackLayout>
-    </ContentPage.Content>
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+mc:Ignorable="d"
+xmlns:local11="clr-namespace:PMWorks.Pages"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+x:Class="PMWorks.Pages.ConsoleScheduleMaintenance"
+ios:Page.UseSafeArea="true">
+<NavigationPage.TitleView>
+<OnPlatform x:TypeArguments="View">
+<OnPlatform.iOS>
+<StackLayout>
+<Label Text="PMWorks" FontSize="24" TextColor="White"
+VerticalOptions="Center"
+HorizontalOptions="Center">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="CircularStd-Bold" />
+<On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+</OnPlatform>
+</Label.FontFamily>
+</Label>
+</StackLayout>
+</OnPlatform.iOS>
+<OnPlatform.Android>
+<StackLayout>
+<Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" FontFamily="CircularStd-Bold" TextColor="White"
+VerticalOptions="Center"
+HorizontalOptions="Center" >
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="CircularStd-Bold" />
+<On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+</OnPlatform>
+</Label.FontFamily>
+</Label>
+</StackLayout>
+</OnPlatform.Android>
+</OnPlatform>
+</NavigationPage.TitleView>
+<ContentPage.Resources>
+<ResourceDictionary>
+<DataTemplate x:Key="MaintenanceListOrder">
+<ViewCell>
+<StackLayout>
+<StackLayout Orientation="Horizontal">
+<Image Source="city" WidthRequest="50" Margin="10,10"></Image>
+<StackLayout Orientation="Vertical" Margin="10,10">
+<Label Text="{Binding Issue}" FontSize="14" TextColor="Black"></Label>
+<Label Text="{Binding IssueSource}" FontSize="14" TextColor="Black">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Regular" />
+<On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
+</OnPlatform>
+</Label.FontFamily>
+</Label>
+<Label Text="{Binding Reccurence}" FontSize="14" TextColor="Black">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Regular" />
+<On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
+</OnPlatform>
+</Label.FontFamily>
+</Label>
+<Label Text="{Binding Date}" FontSize="14" TextColor="Black">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Regular" />
+<On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
+</OnPlatform>
+</Label.FontFamily>
+</Label>
+</StackLayout>
+</StackLayout>
+<StackLayout>
+<Grid></Grid>
+</StackLayout>
+<BoxView Color="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="1"/>
+</StackLayout>
+</ViewCell>
+</DataTemplate>
+<local11:MaintenanceOrderDataTemplate x:Key="MaintenanceOrderDataTemplate" MaintenanceListOrder="{StaticResource MaintenanceListOrder }"/>
+</ResourceDictionary>
+</ContentPage.Resources>
+<ContentPage.Content>
+<StackLayout VerticalOptions="FillAndExpand" Spacing="20" >
+<Grid VerticalOptions = "FillAndExpand">
+<Grid.RowDefinitions>
+<RowDefinition Height="7*" />
+<RowDefinition Height="*" />
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*" />
+<ColumnDefinition Width="*" />
+<ColumnDefinition Width="*" />
+</Grid.ColumnDefinitions>
+<ListView x:Name="MaintenanceList" HasUnevenRows="True" ItemTemplate="{StaticResource MaintenanceOrderDataTemplate}" SeparatorVisibility="None" Grid.Row="0" Grid.Column="0" Grid.RowSpan = "2" Grid.ColumnSpan = "3" VerticalOptions = "FillAndExpand" HorizontalOptions="FillAndExpand" SelectionMode="None">
+<ListView.Header>
+<Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">
+<StackLayout Orientation="Vertical">
+<Label Text="Maintenance Schedule List" HorizontalTextAlignment="Center" MaxLines="1" HorizontalOptions="Center" FontSize="18" TextColor="White">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="CircularStd-Bold" />
+<On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+</OnPlatform>
+</Label.FontFamily>
+</Label>
+</StackLayout>
+</Frame>
+</ListView.Header>
+</ListView>
+<Button Clicked="ButtonFilterClicked" BackgroundColor="Transparent" Image="notification_hover.png" Grid.Row="1" Grid.Column = "2"/>
+<!--</Frame> -->
+</Grid>
+</StackLayout>
+</ContentPage.Content>
 </ContentPage>

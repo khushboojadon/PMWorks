@@ -2,7 +2,6 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-
 namespace PMWorks.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -11,9 +10,8 @@ namespace PMWorks.Pages
         public ConsoleScheduleMaintenance()
         {
             InitializeComponent();
-            MaintenanceList.ItemsSource = new MaintenanceOrderList().ListOfMaintenanceOrder();
+            MaintenanceList.ItemsSource = new ConsoleScheduleList().ListOfConsoleMaintenanceSchedule();
         }
-
         private void ButtonFilterClicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new ConsoleScheduleMaintenanceFilter());

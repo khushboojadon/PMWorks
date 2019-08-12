@@ -1,148 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PMWorks.Pages.ProfilePage"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true">
-    <NavigationPage.TitleView>
-        <OnPlatform x:TypeArguments="View">
-            <OnPlatform.iOS>
-            <StackLayout>
-            <Label Text="PMWorks" FontSize="24" TextColor="White"
-            VerticalOptions="Center"
-            HorizontalOptions="Center">
-            <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="CircularStd-Bold" />
-                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
-            </OnPlatform>
-            </Label.FontFamily>
-        </Label>               
-            </StackLayout>
-            </OnPlatform.iOS>
-            <OnPlatform.Android>
-            <StackLayout>
-            <Label Margin="0,0,40,0" Text="PMWorks" FontSize="24" TextColor="White"
-            VerticalOptions="Center"
-            HorizontalOptions="Center">
-            <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="CircularStd-Bold" />
-                <On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
-            </OnPlatform>
-            </Label.FontFamily>
-        </Label>               
-            </StackLayout>   
-            </OnPlatform.Android>
-            </OnPlatform>
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="PMWorks.Pages.ProfilePage"
+xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+ios:Page.UseSafeArea="true">
+<NavigationPage.TitleView>
+<OnPlatform x:TypeArguments="View">
+<OnPlatform.iOS>
+<StackLayout>
+<Label Text="PMWorks" FontSize="24" TextColor="White"
+VerticalOptions="Center"
+HorizontalOptions="Center">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="CircularStd-Bold" />
+<On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+</StackLayout>
+</OnPlatform.iOS>
+<OnPlatform.Android>
+<StackLayout>
+<Label Text="PMWorks" FontSize="24" TextColor="White"
+VerticalOptions="Center"
+HorizontalOptions="Center">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="CircularStd-Bold" />
+<On Platform="Android" Value="circularStd-Bold.otf#circular Std Bold" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+</StackLayout> 
+</OnPlatform.Android>
+</OnPlatform>
 </NavigationPage.TitleView>
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical" BackgroundColor="#eeeeee" >
-            <StackLayout>
-            <Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">
-            
-            <Label Text="Profile" HorizontalTextAlignment="Center" Margin="10,0,10,0" HorizontalOptions="Center" FontSize="18" TextColor="White">
-            <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Bold" />
-                <On Platform="Android" Value="Rubik-Bold.ttf#Rubik Bold" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>              
-           
-        </Frame>
-            </StackLayout>
-            <ImageButton Source="usericon"
-                                         Margin="0,20,0,0"
-                                         HorizontalOptions="Center"
-                                         VerticalOptions="Center" 
-                                         BackgroundColor="Transparent"
-                                         WidthRequest="60"
-                                         HeightRequest="60"/>
-            <Label  Margin="0,10,0,0" FontSize="16" TextColor="Black" Text="Lalit" HorizontalOptions="Center" VerticalOptions="Center">
-            <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Bold" />
-                <On Platform="Android" Value="Rubik-Bold.ttf#Rubik Bold" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>      
-            <Frame CornerRadius="5" BorderColor="#00D6D8"
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" BackgroundColor="#eeeeee" >
+<StackLayout>
+<Frame HasShadow="true" CornerRadius="5" BackgroundColor="#00D6D8" Opacity="0.7">
+
+<Label Text="Profile" HorizontalTextAlignment="Center" Margin="10,0,10,0" HorizontalOptions="Center" FontSize="18" TextColor="White">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Bold" />
+<On Platform="Android" Value="Rubik-Bold.ttf#Rubik Bold" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+
+</Frame>
+</StackLayout>
+<ImageButton Source="usericon"
+Margin="0,20,0,0"
+HorizontalOptions="Center"
+VerticalOptions="Center" 
+BackgroundColor="Transparent"
+WidthRequest="60"
+HeightRequest="60"/>
+<Label Margin="0,10,0,0" FontSize="16" TextColor="Black" Text="Lalit" HorizontalOptions="Center" VerticalOptions="Center">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Bold" />
+<On Platform="Android" Value="Rubik-Bold.ttf#Rubik Bold" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+<Frame CornerRadius="5" BorderColor="#00D6D8"
 VerticalOptions="Start"
 HasShadow="True"
 Padding="0" Margin="25,30,25,30">
-                <StackLayout Orientation="Vertical">
-                    
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Email:" Margin="20,10,0,0" FontSize="16" TextColor="Black" HorizontalTextAlignment="Start">
-                        <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Medium" />
-                <On Platform="Android" Value="Rubik-Medium.ttf#Rubik Medium" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>      
-                        <Label Text="lalit58@gmail.com " Margin="10,10,0,0" HorizontalOptions="Center" FontSize="16" HorizontalTextAlignment="Start" TextColor="Black">
-                        <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Regular" />
-                <On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>      
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="No. of Hotels: " Margin="20,10,0,0" FontSize="16" TextColor="Black" HorizontalTextAlignment="Start">
-                        <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Medium" />
-                <On Platform="Android" Value="Rubik-Medium.ttf#Rubik Medium" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>          
-                        <Label Text="10 " Margin="20,10,0,0" HorizontalOptions="Center" FontSize="16" HorizontalTextAlignment="Start" TextColor="Black">
-                        <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Regular" />
-                <On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>          
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Role: " Margin="20,10,0,0" FontSize="16" TextColor="Black" HorizontalTextAlignment="Start">
-                        <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Medium" />
-                <On Platform="Android" Value="Rubik-Medium.ttf#Rubik Medium" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>        
-                        <Label Text="Director" Margin="10,10,0,0"  HorizontalOptions="Center" FontSize="16" HorizontalTextAlignment="Start" TextColor="Black">
-                        <Label.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Regular" />
-                <On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
-            </OnPlatform>
-            </Label.FontFamily>
-            </Label>        
-                    </StackLayout>
-                    <Button 
+<StackLayout Orientation="Vertical">
+
+<StackLayout Orientation="Horizontal">
+<Label Text="Email:" Margin="20,10,0,0" FontSize="16" TextColor="Black" HorizontalTextAlignment="Start">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Medium" />
+<On Platform="Android" Value="Rubik-Medium.ttf#Rubik Medium" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+<Label Text="lalit58@gmail.com " Margin="10,10,0,0" HorizontalOptions="Center" FontSize="16" HorizontalTextAlignment="Start" TextColor="Black">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Regular" />
+<On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label Text="No. of Hotels: " Margin="20,10,0,0" FontSize="16" TextColor="Black" HorizontalTextAlignment="Start">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Medium" />
+<On Platform="Android" Value="Rubik-Medium.ttf#Rubik Medium" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+<Label Text="10 " Margin="20,10,0,0" HorizontalOptions="Center" FontSize="16" HorizontalTextAlignment="Start" TextColor="Black">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Regular" />
+<On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label Text="Role: " Margin="20,10,0,0" FontSize="16" TextColor="Black" HorizontalTextAlignment="Start">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Medium" />
+<On Platform="Android" Value="Rubik-Medium.ttf#Rubik Medium" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+<Label Text="Director" Margin="10,10,0,0" HorizontalOptions="Center" FontSize="16" HorizontalTextAlignment="Start" TextColor="Black">
+<Label.FontFamily>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Regular" />
+<On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
+</OnPlatform>
+</Label.FontFamily>
+</Label> 
+</StackLayout>
+<Button 
 Text="Logout"
 CornerRadius="25"
 TextColor="White"
 Margin="20,30,20,30"
-FontSize="16"                        
+FontSize="16" 
 BackgroundColor="#00D6D8">
 <Button.FontFamily>
-            <OnPlatform x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Rubik-Regular" />
-                <On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
-            </OnPlatform>
-            </Button.FontFamily>
-            </Button>                            
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-    </ContentPage.Content>
+<OnPlatform x:TypeArguments="x:String">
+<On Platform="iOS" Value="Rubik-Regular" />
+<On Platform="Android" Value="Rubik-Regular.ttf#Rubik Regular" />
+</OnPlatform>
+</Button.FontFamily>
+</Button> 
+</StackLayout>
+</Frame>
+</StackLayout>
+</ContentPage.Content>
 </ContentPage>

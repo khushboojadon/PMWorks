@@ -1,24 +1,14 @@
 ﻿<Properties StartupConfiguration="{918AC907-7AF8-468D-BB06-15B7F949ABDC}|Default">
   <MonoDevelop.Ide.ItemProperties.PMWorks.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PMWorks/Pages/ConsoleMenuPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PMWorks/Pages/FirstPage.xaml.cs">
     <Files>
-      <File FileName="PMWorks/Pages/ConsoleMenuPage.xaml" Line="45" Column="25" />
-      <File FileName="PMWorks/Pages/HotelDetails.xaml" Line="200" Column="15" />
-      <File FileName="PMWorks/Pages/ConsoleMenuPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="PMWorks/Pages/FirstPage.xaml.cs" Line="14" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PMWorks" expanded="True">
-            <Node name="PMWorks" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="ConsoleMenuPage.xaml" expanded="True">
-                  <Node name="ConsoleMenuPage.xaml.cs" selected="True" />
-                </Node>
-                <Node name="ConsoleOrderMaintenanceFilter.xaml" expanded="True" />
-                <Node name="SelectHotelPage.xaml" expanded="True" />
-              </Node>
-            </Node>
+          <Node name="PMWorks" expanded="True" selected="True">
+            <Node name="PMWorks" expanded="True" />
           </Node>
         </State>
       </Pad>

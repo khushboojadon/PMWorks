@@ -29,7 +29,7 @@ namespace PMWorks.Pages
 
                 if (userInfo != null)
                 {
-                    var userName = $"{userInfo.GivenName} {userInfo.FamilyName}";
+                    var userName = $"{userInfo.DisplayableId}";
                     await DisplayAlert("Success", userName, "Ok");
                     await Navigation.PushAsync(new MainTabPage());
                 }
