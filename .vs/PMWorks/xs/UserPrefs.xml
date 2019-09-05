@@ -2,21 +2,12 @@
   <MonoDevelop.Ide.ItemProperties.PMWorks.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PMWorks/Pages/FirstPage.xaml.cs">
     <Files>
-      <File FileName="PMWorks/Pages/FirstPage.xaml.cs" Line="14" Column="9" />
+      <File FileName="PMWorks/Pages/FirstPage.xaml.cs" Line="4" Column="10" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="PMWorks" expanded="True" selected="True">
-            <Node name="PMWorks" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.PMWorks.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.983C9A24-53FA-4736-BFFD-3C2D4A9FEEE9" />
+  <MonoDevelop.Ide.ItemProperties.PMWorks.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F442D11B-5554-426D-940E-9787223A3FEC" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
